@@ -38,18 +38,28 @@ footer {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    padding: 1rem 20px 1rem 20px;
+    padding: 3rem 20px 3rem 20px;
     align-items: center;
 }
 
 .icon-links li i {
-    font-size: 2rem;
-}
-
-.ul-flex-list {
     display: flex;
     list-style: none;
     gap: 1rem;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.header-ul-flex-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+}
+.icon-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
     align-items: center;
 }
 
