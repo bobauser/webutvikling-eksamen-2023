@@ -49,13 +49,11 @@ footer {
     align-items: center;
     font-size: 2rem;
 }
-<<<<<<< Updated upstream:komponenter/testcss.css
-=======
+
 .icon-links li a {
     text-decoration: none;
-}
->>>>>>> Stashed changes:Styling/components.css
 
+}
 .header-ul-flex-list {
     display: flex;
     list-style: none;
@@ -80,6 +78,14 @@ footer {
     background-color: black;
     padding: 18px 15px 18px 15px;
     border-radius: 4px;
+}
+
+.bg-circle {
+    background-color: black;
+    /*padding: 18px 15px 18px 15px;*/
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
 }
 
 .text-bold {
@@ -107,5 +113,15 @@ footer {
     color: var(--black);
 }
 .white-text {
-    color: var(--black);
+    color: var(--white);
+}
+
+.font-small {
+    font-size: 1rem;
+}
+.font-medium {
+    font-size: 3rem;
+}
+.font-big {
+    font-size: 6rem;
 }

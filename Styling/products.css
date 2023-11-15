@@ -32,8 +32,6 @@
 .development-section {
     grid-area: section4;
 }
-
-
 .portfolio-cards {
     max-width: 350px;
     min-width: 200px;
