@@ -1,0 +1,17 @@
+Maksimalt 5 Div pr side
+INGEN ERROR
+
+
+Eksamensdokumentet.pdf er TOMT, fyll inn
+
+
+Fargekoder
+Gull-gul kode: #e6bd43
+Gråsvart: #252525
+Svart: #000
+Hvit: #fff
+
+
+Ideer:
+Bilde, video: fade inn effekt
+bruk av css left eller transform x -10, opacity 0 -> transform x 0 opacity 1
