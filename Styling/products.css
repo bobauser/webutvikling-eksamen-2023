@@ -1,0 +1,40 @@
+/*GRID HÅNDTERING*/
+#products-grid {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "section1"
+        "section2"
+        "section3"
+        "section4"
+        "footer";
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+.portfolio-section {
+    grid-area: section1;
+}
+.branding-section {
+    grid-area: section2;
+}
+.design-section {
+    grid-area: section3;
+}
+.development-section {
+    grid-area: section4;
+}
+
+
+.portfolio-cards {
+    max-width: 350px;
+    min-width: 200px;
+}

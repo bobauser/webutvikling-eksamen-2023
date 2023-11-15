@@ -49,6 +49,12 @@ footer {
     align-items: center;
     font-size: 2rem;
 }
+<<<<<<< Updated upstream:komponenter/testcss.css
+=======
+.icon-links li a {
+    text-decoration: none;
+}
+>>>>>>> Stashed changes:Styling/components.css
 
 .header-ul-flex-list {
     display: flex;
