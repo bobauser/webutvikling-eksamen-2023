@@ -1,0 +1,110 @@
+:root {
+    --gold-yellow: #e6bd43;
+    --dark-gray: #252525;
+    --black: #000;
+    --white: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/*Grid Formater*/
+.divide-left-right {
+    display: grid;
+    grid-template-areas: "left right";
+}
+
+.figure-400px {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure-200px img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.left {
+    grid-area: left;
+}
+.right {
+    grid-area: right;
+}
+
+/*KLASSER*/
+
+.logo-img {
+    height: 80px;
+    width: auto;
+}
+
+.header-element-selected {
+    font-weight: bold;
+    text-decoration: underline #e6bd43;
+}
+
+.bg-box {
+    background-color: black;
+    padding: 18px 15px 18px 15px;
+    border-radius: 2px;
+}
+
+.bg-circle {
+    background-color: black;
+    /*padding: 18px 15px 18px 15px;*/
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+/*FARGER*/
+
+.yellow-text {
+    color: var(--gold-yellow);
+}
+.yellow-bg {
+    background-color: var(--gold-yellow);
+}
+
+.dark-gray-text {
+    color: var(--dark-gray);
+}
+
+.dark-gray-bg {
+    background-color: var(--dark-gray);
+}
+
+.black-text {
+    color: var(--black);
+    text-decoration: none;
+}
+.white-text {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/*Font Størrelse*/
+
+.font-small {
+    font-size: 1rem;
+}
+.font-medium {
+    font-size: 2.5rem;
+}
+.font-big {
+    font-size: 5rem;
+}
