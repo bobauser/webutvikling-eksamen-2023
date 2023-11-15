@@ -1,0 +1,5 @@
+Nettstedet skal være validert og ha null errors.
+Dere har en <div> - kvote på 5, går man over kvoten blir oppgaven satt til en F. Vurder om det er nødvendig med div-er eller ikke, om behovet for <div> taggen blir også vurdert.
+Dere skal ha brukt de semantiske taggerne <header>, <nav>, <main>, <section> og <article>.
+Alle sidene skal inneholde dummy data som lorum ipsum tekst og placeholder bilder.
+Oppgaven dere skal inneholde et dokument hvor dere skriver om hvilket ambisjonsnivå (A-B) dere velger å gå etter, hvilke antagelser eller tolkninger man har gjort og kilder til bruk av bilder og annet. Mangler dokumentet og blir oppgaven satt til en F.

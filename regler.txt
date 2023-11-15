@@ -8,6 +8,25 @@ Dokument om ambisjonsnivået. Er dette eksamensdokumentet?
 
 tabindex
 
+Sjekkliste<
+P er IKKE semantisk når det brukes som en overskrift, må byttes til h2 eller mindre
+
+/>
+
+
+NAVIGERING: <
+
+Logo: Navigerer til index.html
+Home: Navigerer til index.html
+Portfolio: Navigerer til products.html
+About: Navigerer til about.html
+
+
+MOBIL:*
+NAv greier skal stå under hverandre IKKE BURGER MENY
+
+Contact: Denne knappen skal referere deg til About siden, og skal bla deg ned til contact panelet under
+/>
 
 Fargekoder
 Gull-gul kode: #e6bd43
@@ -19,3 +38,7 @@ Hvit: #fff
 Ideer:
 Bilde, video: fade inn effekt
 bruk av css left eller transform x -10, opacity 0 -> transform x 0 opacity 1
+
+
+Ressurser og Ting jeg har brukt:
+Placeholder 1, beskrivelse: (fuglebilde). Link: https://www.klikk.no/friluftsliv/de-10-vanligste-fuglene-fuglebrettet-6981359...
