@@ -3,6 +3,8 @@
     --dark-gray: #252525;
     --black: #000;
     --white: #fff;
+    --light-gray: #D3D3D3FF;
+    --lighter-gray: #ececec;
 }
 
 body {
@@ -10,11 +12,127 @@ body {
     margin: 0;
 }
 
+.icon-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    gap: 1rem;
+    padding: 0;
+}
+.icon-list span {
+    padding-left: 1rem;
+}
+.icon-list i {
+    width: 10px;
+}
+
 /*Grid Formater*/
 .divide-left-right {
     display: grid;
     grid-template-areas: "left right";
 }
+
+.grid-40-60 {
+    grid-template-columns: 40% 60%;
+}
+.grid-50-50 {
+    grid-template-columns: 50% 50%;
+}
+.grid-auto {
+    grid-template-columns: auto auto;
+}
+.grid-center {
+    display: grid; /* Ensure it's a grid container */
+    max-width: 80%; /* Adjust this value to control the maximum width */
+    margin: 0 auto; /* This centers the grid and provides dynamic horizontal spacing */
+    background-size: 100%;
+    grid-template-columns: repeat(2, 1fr); /* creates a two-column layout with equal width */
+    gap: 2rem; /* sets a gap between the grid columns */
+    padding: 2rem; /* optional: adds some padding within the grid */
+    background-color: #f7f7f7;
+}
+
+.left {
+    grid-area: left;
+    word-wrap: break-word; /* Ensures that text wraps within the container */
+    overflow-wrap: break-word; /* Breaks long words if necessary to prevent overflow */
+}
+
+.right {
+    grid-area: right;
+    text-align: left;
+    word-wrap: break-word; /* Ensures that text wraps within the container */
+    overflow-wrap: break-word; /* Breaks long words if necessary to prevent overflow */
+}
+
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+
+/*FLEXBOX klasser*/
+.content-row-fill-width {
+    display: flex;
+    justify-content: space-between; /* This spreads out the items evenly */
+    gap: 1rem; /* Adjust the gap as needed */
+}
+.content-row-compress-width {
+    display: flex;
+    justify-content: space-around; /* This spreads out the items evenly */
+    gap: 3rem; /* Adjust the gap as needed */
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-width-80 >* {
+    width: 80%;
+}
+
+.display-block {
+    display: inline-block;
+}
+
+/*KLASSER*/
+
+.logo-img {
+    height: 80px;
+    width: auto;
+}
+
+.header-element-selected {
+    font-weight: bold;
+    text-decoration: underline #e6bd43;
+}
+
+.bg-box {
+    background-color: var(--black);
+    padding: 13px 15px 13px 15px;
+    border-radius: 2px;
+    max-width: fit-content;
+    border: none;
+}
+
+.white-input {
+    background-color: var(--white);
+    padding: 13px 15px 13px 15px;
+    border-radius: 2px;
+    max-width: fit-content;
+}
+
+.bg-circle {
+    background-color: black;
+    /*padding: 18px 15px 18px 15px;*/
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
 
 .figure-400px {
     max-width: 400px;
@@ -33,44 +151,6 @@ body {
     object-fit: contain;
 }
 
-
-.left {
-    grid-area: left;
-}
-.right {
-    grid-area: right;
-}
-
-/*KLASSER*/
-
-.logo-img {
-    height: 80px;
-    width: auto;
-}
-
-.header-element-selected {
-    font-weight: bold;
-    text-decoration: underline #e6bd43;
-}
-
-.bg-box {
-    background-color: black;
-    padding: 18px 15px 18px 15px;
-    border-radius: 2px;
-}
-
-.bg-circle {
-    background-color: black;
-    /*padding: 18px 15px 18px 15px;*/
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-}
-
-.text-bold {
-    font-weight: bold;
-}
-
 /*FARGER*/
 
 .yellow-text {
@@ -78,6 +158,16 @@ body {
 }
 .yellow-bg {
     background-color: var(--gold-yellow);
+}
+.light-gray-bg {
+    background-color: var(--light-gray);
+}
+.lighter-gray-bg {
+    background-color: var(--lighter-gray);
+}
+
+.border-black {
+    border: 2px solid var(--black);
 }
 
 .dark-gray-text {
@@ -102,9 +192,16 @@ body {
 .font-small {
     font-size: 1rem;
 }
+.font-medium-small {
+     font-size: 2rem;
+ }
 .font-medium {
     font-size: 2.5rem;
 }
 .font-big {
     font-size: 5rem;
+}
+
+.text-bold {
+    font-weight: bold;
 }

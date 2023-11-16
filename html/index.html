@@ -5,13 +5,35 @@
     <title>Company Name - Home</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styling/index.css">
-    <link rel="stylesheet" href="../Styling/mybootstrap.css">
-    <link rel="stylesheet" href="../icons/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../Styling/pages.css">
+    <link rel="stylesheet" type="text/css" href="../Styling/mybootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../Styling/components.css">
+    <link rel="stylesheet" type="text/css" href="../icons/css/all.css">
 
 </head>
 <body>
-<!--Header--->
+<header>
+    <a href="../html/index.html">
+        <img class="logo-img" src="../ressurser/logo1.png">
+    </a>
+
+    <nav>
+        <ul class="header-ul-flex-list">
+            <li class="header-element-selected">
+                <a href="../html/index.html">Home</a>
+            </li>
+            <li>
+                <a href="../html/products.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="../html/about.html">About</a>
+            </li>
+            <li class="bg-box yellow-bg text-bold">
+                <a href="../html/about.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
 <main>
     <section class="compeling-headline-section align-at-middle">
@@ -20,7 +42,7 @@
             Your browser does not support the video tag.
         </video>
         <h1 class="font-big">Compelling headline</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod. Etiam venenatis sem sit amet interdum viverra. Praesent mi sem, imperdiet ac mi at, vulputate ornare est. Phasellus sodales mauris ac lectus hendrerit, a eleifend massa pharetra. Morbi eu nibh suscipit, ornare ipsum quis, dictum ante. Donec consequat aliquam lorem eu auctor. Praesent a eros et quam posuere pulvinar nec eget dolor. Nunc id scelerisque arcu, at fermentum erat. Morbi sit amet faucibus erat. Praesent ut scelerisque urna.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit justo magna, et varius sem accumsan at. Sed ullamcorper magna sed lacinia faucibus. Cras id odio nisi. Ut quis placerat massa. Ut ac erat eleifend, vehicula sapien eget, pretium sapien. Sed id vestibulum purus. Ut bibendum purus ut pharetra pretium.</p>
         <a href="../services.html" class="yellow-bg bg-box text-bold black-text">Read more about our services</a>
     </section>
 
@@ -29,50 +51,82 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod. Etiam venenatis sem sit amet interdum viverra. Praesent mi sem, imperdiet ac mi at, vulputate ornare est. Phasellus sodales mauris ac lectus hendrerit, a eleifend massa pharetra. Morbi eu nibh suscipit, ornare ipsum quis, dictum ante. Donec consequat aliquam lorem eu auctor. Praesent a eros et quam posuere pulvinar nec eget dolor. Nunc id scelerisque arcu, at fermentum erat. Morbi sit amet faucibus erat. Praesent ut scelerisque urna.</p>
     </section>
 
-    <article class="about-company-section align-at-middle divide-left-right">
+    <article class="about-company-section align-vertically yellow-bg divide-left-right grid-auto">
         <figure class="left figure-400px">
             <img src="../ressurser/placeholder2.jpg" alt="Placeholder bilde">
         </figure>
-        <div class="right">
-            <h3>About Our Company</h3>
+        <div class="right text-left">
+            <h3 class="font-medium">About Our Company</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod. Etiam venenatis sem sit amet interdum viverra. Praesent mi sem, imperdiet ac mi at, vulputate ornare est. Phasellus sodales mauris ac lectus hendrerit, a eleifend massa pharetra. Morbi eu nibh suscipit, ornare ipsum quis, dictum ante. Donec consequat aliquam lorem eu auctor. Praesent a eros et quam posuere pulvinar nec eget dolor. Nunc id scelerisque arcu, at fermentum erat. Morbi sit amet faucibus erat. Praesent ut scelerisque urna.</p>
-            <a href="../about.html">Read more about us</a>
+            <a href="../about.html" class="bg-box yellow-bg border-black text-bold black-text">Read more about us</a>
         </div>
     </article>
 
-    <section class="our-services-section align-at-middle">
-        <h2>Our services</h2>
-        <article>
-            <i class="fa-solid fa-users"></i>
-            <h3>Branding</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </article>
-        <article>
-            <i class="fa-solid fa-cloud-arrow-up"></i>
-            <h3>Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </article>
-        <article>
-            <i class="fa-solid fa-wifi"></i>
-            <h3>Development</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </article>
-        <article>
-            <i class="fa-solid fa-code"></i>
-            <h3>Support</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        </article>
+    <section class="our-services-section align-at-middle content-width-80">
+        <h2 class="font-medium">Our services</h2>
+        <section class="content-row-fill-width">
+            <article>
+                <span class="font-medium-small">
+                    <i class="fa-solid fa-users"></i>
+                </span>
+                <h3 class="font-medium-small">Branding</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </article>
+            <article>
+                <span class="font-medium-small">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </span>
+                <h3 class="font-medium-small">Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </article>
+            <article>
+                <span class="font-medium-small">
+                    <i class="fa-solid fa-wifi"></i>
+                </span>
+                <h3 class="font-medium-small">Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </article>
+            <article>
+                <span class="font-medium-small">
+                    <i class="fa-solid fa-code"></i>
+                </span>
+                <h3 class="font-medium-small">Support</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </article>
+        </section>
     </section>
 
-    <section class="newsletter-section align-at-middle">
-        <h2>Sign up for our newsletter</h2>
+    <section class="newsletter-section align-at-middle lighter-gray-bg">
+        <h2 class="font-medium">Sign up for our newsletter</h2>
         <form>
-            <input type="email" placeholder="Enter your email">
-            <button type="submit">Sign me up</button>
+            <input type="email" class="bg-box white-input" placeholder="Nora@epost.no">
+            <button type="submit" class="bg-box yellow-bg text-bold">Sign me up</button>
         </form>
     </section>
 </main>
-<!--Footer--->
+<footer class="dark-gray-bg">
+    <a href="../html/index.html">
+        <img class="logo-img" src="../ressurser/logo1.png">
+    </a>
+    <p>Companyrights Companyname 2023</p>
+    <ul class="footer-ul-flex-list icon-links">
+        <li>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook white-text"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-square-instagram white-text"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin white-text"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
 
 </body>
 </html>

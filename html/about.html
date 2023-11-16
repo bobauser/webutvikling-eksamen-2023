@@ -3,72 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <title>About</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../icons/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../Styling/pages.css">
+    <link rel="stylesheet" type="text/css" href="../Styling/mybootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../Styling/components.css">
+    <link rel="stylesheet" type="text/css" href="../icons/css/all.css">
 
 </head>
 <body>
-<!--Header--->
+<header>
+    <a href="../html/index.html">
+        <img class="logo-img" src="../ressurser/logo1.png">
+    </a>
+
+    <nav>
+        <ul class="header-ul-flex-list">
+            <li class="header-element-selected">
+                <a href="../html/index.html">Home</a>
+            </li>
+            <li>
+                <a href="../html/products.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="../html/about.html">About</a>
+            </li>
+            <li class="bg-box yellow-bg text-bold">
+                <a href="../html/about.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
 <main>
 
-    <section class="about-our-company">
-        <img src="path-to-your-image.jpg" alt="About Image">
-        <h1>About Our Company</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod. Etiam venenatis sem sit amet interdum viverra. Praesent mi sem, imperdiet ac mi at, vulputate ornare est. Phasellus sodales mauris ac lectus hendrerit, a eleifend massa pharetra. Morbi eu nibh suscipit, ornare ipsum quis, dictum ante. Donec consequat aliquam lorem eu auctor. Praesent a eros et quam posuere pulvinar nec eget dolor. Nunc id scelerisque arcu, at fermentum erat. Morbi sit amet faucibus erat. Praesent ut scelerisque urna.</p>
-        <a href="#">Get in touch with us</a>
+    <section class="about-our-company background-image-figure">
+        <figure>
+            <img src="../ressurser/jegfantbildet;).png" alt="About Image">
+        </figure>
+        <aside class="aside-card">
+            <h1>About Our Company</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod. Etiam venenatis sem sit amet interdum viverra. Praesent mi sem, imperdiet ac mi at, vulputate ornare est. Phasellus sodales mauris ac lectus hendrerit, a eleifend massa pharetra. Morbi eu nibh suscipit, ornare ipsum quis, dictum ante. Donec consequat aliquam lorem eu auctor. Praesent a eros et quam posuere pulvinar nec eget dolor. Nunc id scelerisque arcu, at fermentum erat. Morbi sit amet faucibus erat. Praesent ut scelerisque urna.</p>
+            <a href="#">Get in touch with us</a>
+        </aside>
     </section>
 
-    <section class="our-services-section">
-        <h2>Our Services</h2>
-        <div> <!--For GRIDdet. Fjerne?---->
+    <section class="our-services-section align-at-middle content-width-80">
+        <h2 class="font-medium">Our Services</h2>
+        <section class="content-row-fill-width">
             <article>
-                <i class="fa-solid fa-users"></i>
-                <h3>Branding</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod.</p>
+                <span class="font-medium-small">
+                    <i class="fa-solid fa-users"></i>
+                </span>
+                <h3 class="font-medium-small">Branding</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
             <article>
-                <i class="fa-solid fa-cloud-arrow-up"></i>
-                <h3>Branding</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod.</p>
+                <span class="font-medium-small">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </span>
+                <h3 class="font-medium-small">Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
             <article>
-                <i class="fa-solid fa-code"></i>
-                <h3>Branding</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod.</p>
+                <span class="font-medium-small">
+                    <i class="fa-solid fa-wifi"></i>
+                </span>
+                <h3 class="font-medium-small">Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
             <article>
-                <i class="fa-solid fa-wifi"></i>
-                <h3>Branding</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod.</p>
+                <span class="font-medium-small">
+                    <i class="fa-solid fa-code"></i>
+                </span>
+                <h3 class="font-medium-small">Support</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
-        </div>
+        </section>
     </section>
 
-    <section class="our-clients">
-        <h2>Some of our clients</h2>
-        <div class="clients-grid">
+    <section class="our-clients align-vertically yellow-bg">
+        <h2 class="font-medium">Some of our clients</h2>
+        <div class="clients-grid content-row-compress-width">
             <img src="../ressurser/logo1.png" alt="Client Logo nr 1">
             <img src="../ressurser/logo2.png" alt="Client Logo nr 1">
             <img src="../ressurser/logo3.png" alt="Client Logo nr 1">
         </div>
     </section>
 
-    <section class="contact-us">
-        <form>
+    <section class="contact-us align-at-middle lighter-gray-bg divide-left-right grid-50-50 grid-center">
+        <h2>Contact us</h2>
+        <form class="left flex-column text-left">
             <h2>Send us a message</h2>
             <label for="name-input">Name</label>
-            <input id="name-input" type="text" name="name" placeholder="Ola Nordmann...">
+            <input class="bg-box white-input" id="name-input" type="text" name="name" placeholder="Ola Nordmann...">
             <label for="subject-input">Subject</label>
-            <input id="subject-input" type="text" name="subject" placeholder="Branding...">
+            <input class="bg-box white-input" id="subject-input" type="text" name="subject" placeholder="Branding...">
             <label for="message-input">Message</label>
-            <textarea id="message-input" name="message" placeholder="Message"></textarea>
-            <button type="submit">Send message</button>
+            <textarea class="bg-box white-input" id="message-input" name="message" placeholder="Message"></textarea>
+            <button type="submit" class="bg-box yellow-bg text-bold">Send message</button>
         </form>
-        <aside>
+        <aside class="right">
             <h2>Contact information</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod. Etiam venenatis sem sit amet interdum viverra. Praesent mi sem, imperdiet ac mi at, vulputate ornare est. Phasellus sodales mauris ac lectus hendrerit, a eleifend massa pharetra. Morbi eu nibh suscipit, ornare ipsum quis, dictum ante. Donec consequat aliquam lorem eu auctor. Praesent a eros et quam posuere pulvinar nec eget dolor. Nunc id scelerisque arcu, at fermentum erat. Morbi sit amet faucibus erat. Praesent ut scelerisque urna.</p>
-            <ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit justo magna, et varius sem accumsan at. Sed ullamcorper magna sed lacinia faucibus. Cras id odio nisi. Ut quis placerat massa. Ut ac erat eleifend</p>
+            <ul class="icon-list">
                 <li>
                     <i class="fa-solid fa-location-dot"></i>
                     <span>Adresse</span>
@@ -91,7 +129,30 @@
     </section>
 
 </main>
-<!--Footer--->
+
+<footer class="dark-gray-bg">
+    <a href="../html/index.html">
+        <img class="logo-img" src="../ressurser/logo1.png">
+    </a>
+    <p>Companyrights Companyname 2023</p>
+    <ul class="footer-ul-flex-list icon-links">
+        <li>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook white-text"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-square-instagram white-text"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin white-text"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
 
 </body>
 </html>
