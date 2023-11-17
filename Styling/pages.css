@@ -26,7 +26,7 @@
     border-bottom: 2px solid lightgray;
 }
 
-.align-at-middle {
+.align-at-middle-60 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,9 +35,57 @@
     padding: 3rem 0;
 }
 
-.align-at-middle >* {
+.padding-vertical-5 {
+    padding: 5rem 0;
+}
+
+.padding-vertical-4 {
+    padding: 4rem 0;
+}
+
+.padding-vertical-3 {
+    padding: 3rem 0;
+}
+
+.padding-vertical-2 {
+    padding: 3rem 0;
+}
+
+
+.margin-vertical-2 {
+    margin: 2rem 0;
+}
+
+.align-at-middle-60 >* {
     width: 60%;
 }
+
+.align-at-middle-80 >* {
+    width: 80%;
+}
+
+.aside-card {
+    max-width: 50%;
+    width: 100%;
+    margin: 3rem 0;
+}
+.figure-img-fill-width {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.figure-img-fill-width img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+
 
 .align-vertically {
     display: flex;
@@ -46,13 +94,6 @@
     align-items: center;
     text-align: center;
     padding: 3rem 0;
-}
-
-.background-image-figure {
-    position: relative;
-    overflow: hidden;
-    min-height: 20rem;
-    height: 100%;
 }
 
 .aside-card {
@@ -65,17 +106,20 @@
     box-sizing: border-box; /* Ensure padding is included in width */
 }
 
-.background-image-figure figure {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.about-our-company {
+    min-height: 25rem;
     height: 100%;
-    z-index: -1;
+    position: relative;
+    overflow: hidden;
 }
 
-.background-image-figure img {
+.background-image-figure {
+    top: 0;
+    position: absolute;
+    min-width: 100%;
     width: 100%;
     height: auto;
-    display: block; /* Remove any default margins */
+    background-size: cover;
+    right: 0;
+    z-index: -1;
 }
