@@ -156,6 +156,7 @@ body {
     gap: 1rem;
     padding: 0;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 /*KLASSER*/
@@ -221,16 +222,18 @@ body {
 }
 
 .article-card {
-    max-width: 350px;
+    max-width: 692px;
     min-width: 200px;
     width: 100%;
     height: auto;
     overflow: hidden;
 }
 .article-card figure {
-    max-width: 350px;
+    max-width: 692px;
     width: 100%;
     height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .yellow-box {
