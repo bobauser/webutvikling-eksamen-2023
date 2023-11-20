@@ -26,45 +26,8 @@
     border-bottom: 2px solid lightgray;
 }
 
-.align-at-middle-60 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 3rem 0;
-}
-
-.padding-vertical-5 {
-    padding: 5rem 0;
-}
-
-.padding-vertical-4 {
-    padding: 4rem 0;
-}
-
-.padding-vertical-3 {
-    padding: 3rem 0;
-}
-
-.padding-vertical-2 {
-    padding: 3rem 0;
-}
-
-
-.margin-vertical-2 {
-    margin: 2rem 0;
-}
-
-.align-at-middle-60 >* {
-    width: 60%;
-}
-
-.align-at-middle-80 >* {
-    width: 80%;
-}
-
 .aside-card {
+    z-index: 1;
     position: fixed;
     width: 100%;
     padding: 0;
@@ -100,20 +63,41 @@
 }
 
 .aside-card {
-    position: absolute;
-    top: 0;
-    right: 20px; /* Adjusted from -50% to 20px */
-    background: rgba(255, 255, 255, 0.8); /* Optional: for readability */
-    padding: 20px; /* Optional: for spacing */
-    width: calc(100% - 40px); /* Full width minus padding */
-    box-sizing: border-box; /* Ensure padding is included in width */
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 3rem;
 }
 
-.about-our-company {
+#about-our-company {
     min-height: 25rem;
     height: 100%;
     position: relative;
     overflow: hidden;
+}
+
+#portfolio-section {
+    min-height: 25rem;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio-section header {
+    display: flex;
+    top: 0;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    right: 0;
+    z-index: -1;
+    margin: 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.568);
+    justify-content: center;
 }
 
 .background-image-figure {
@@ -125,4 +109,10 @@
     background-size: cover;
     right: 0;
     z-index: -1;
+    margin: 0;
+}
+.background-image-figure img {
+    min-width: 100%;
+    width: 100%;
+    height: auto;
 }

@@ -1,0 +1,43 @@
+
+.header-element-selected::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 3px solid transparent; /* Starter som gjennomsiktig */
+    transition: border-color 0.5s ease;
+    text-underline-offset: 3px;
+}
+
+.yellow-bg-hover:hover {
+    background-color: var(--black);
+    transition: 0.3s;
+}
+
+.black-text-hover:hover {
+    color: var(--gold-yellow);
+    transition: 0.3s;
+}
+
+.yellow-box:hover {
+    color: var(--gold-yellow);
+    background-color: var(--black);
+    font-weight: normal;
+    transition: 0.3s;
+}
+.yellow-box:hover > * {
+    transition: 0.3s;
+    color: var(--gold-yellow);
+}
+
+@keyframes header-effect-fade-in {
+    0% {
+        font-weight: normal;
+        text-decoration: 3px underline #e6bd43;
+    }
+    100% {
+        font-weight: bold;
+        text-decoration: 3px underline #e6bd43;
+    }
+}

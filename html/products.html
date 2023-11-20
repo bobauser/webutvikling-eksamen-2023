@@ -3,117 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../icons/css/all.css">
-    <link rel="stylesheet" href="../Styling/products.css">
+    <link rel="stylesheet" type="text/css" href="../Styling/pages.css">
+    <link rel="stylesheet" type="text/css" href="../Styling/mybootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../Styling/components.css">
+    <link rel="stylesheet" type="text/css" href="../Styling/Animations.css">
+    <link rel="stylesheet" type="text/css" href="../icons/css/all.css">
+
 
 </head>
 <body id="products-grid">
 
-<!--Header--->
+<header>
+    <a href="../html/index.html">
+        <img class="logo-img" src="../ressurser/logo1.png">
+    </a>
+
+    <nav>
+        <ul class="header-ul-flex-list">
+            <li>
+                <a href="../html/index.html">Home</a>
+            </li>
+            <li class="header-element-selected">
+                <a href="../html/products.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="../html/about.html">About</a>
+            </li>
+            <li class="yellow-box">
+                <a href="../html/about.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
 <main>
-    <section class="portfolio-section">
+
+    <section id="portfolio-section">
+        <figure class="background-image-figure">
+            <img src="../ressurser/jegfantbildet;).png" alt="About Image">
+        </figure>
+
         <header>
-            <h1>Portfolio</h1>
+            <h1 class="font-big">Portfolio</h1>
         </header>
+    </section>
 
-        <section class="explore-jobs">
-            <h2>Explore previous jobs</h2>
-            <!-- Nav bar? -->
+    <section class="explore-jobs margin-square-2">
+        <h2 class="font-medium border-bottom-thick-yellow">Explore previous jobs</h2>
+        <ul class="flex-list">
+            <li><button class="bg-box-small white-bg border-black-2">Branding</button></li>
+            <li><button class="bg-box-small white-bg border-black-2">Design</button></li>
+            <li><button class="bg-box-small white-bg border-black-2">Development</button></li>
+        </ul>
+    </section>
 
-            <ul>
-                <li><button>Branding</button></li>
-                <li><button>Design</button></li>
-                <li><button>Development</button></li>
-            </ul>
-        </section>
+    <section class="branding-section  margin-square-2">
+        <h2 class="font-medium border-bottom-thick-yellow">Branding</h2>
+        <ul class="flex-list"> <!--Bytte ut med en DIV?--->
+            <li>
+                <article class="article-card">
+                    <figure class="figure-400px">
+                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    </figure>
+                    <p>Et harum quidem</p>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <figure class="figure-400px">
+                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    </figure>
+                    <p>Et harum quidem</p>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <figure class="figure-400px">
+                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    </figure>
+                    <p>Et harum quidem</p>
+                </article>
+            </li>
+            <li>
+                <article class="article-card">
+                    <figure class="figure-400px">
+                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    </figure>
+                    <p>Et harum quidem</p>
+                </article>
+            </li>
+        </ul>
+    </section>
 
-        <section class="branding-section">
-            <h2>Branding</h2>
-            <ul> <!--Bytte ut med en DIV?--->
-                <li>
-                    <article class="portfolio-cards">
-                        <figure class="figure-400px">
-                            <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                        </figure>
-                        <p>Et harum quidem</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <figure class="figure-400px">
-                            <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                        </figure>
-                        <p>Et harum quidem</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <figure class="figure-400px">
-                            <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                        </figure>
-                        <p>Et harum quidem</p>
-                    </article>
-                </li>
-                <li> <!--800px figur?--->
-                    <article>
-                        <figure class="figure-800px">
-                            <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                        </figure>
-                        <p>Et harum quidem</p>
-                    </article>
-                </li>
-            </ul>
-        </section>
+    <section class="design-section  margin-square-2">
+        <h2 class="font-medium border-bottom-thick-yellow">Design</h2>
+        <ul>
+            <li>
+                <article>
+                    <figure class="figure-400px">
+                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    </figure>
+                    <p>Et harum quidem</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <figure class="figure-400px">
+                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    </figure>
+                    <p>Et harum quidem</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <figure class="figure-400px">
+                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    </figure>
+                    <p>Et harum quidem</p>
+                </article>
+            </li>
+        </ul>
+    </section>
 
-        <section class="design-section">
-            <h2>Design</h2>
-            <ul>
-                <li>
-                    <article>
-                        <figure class="figure-400px">
-                            <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                        </figure>
-                        <p>Et harum quidem</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <figure class="figure-400px">
-                            <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                        </figure>
-                        <p>Et harum quidem</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <figure class="figure-400px">
-                            <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                        </figure>
-                        <p>Et harum quidem</p>
-                    </article>
-                </li>
-            </ul>
-        </section>
-
-        <section class="development-section">
-            <h2>Development</h2>
-            <ul> <!--SKAL BENYTTES FLEXBOX, ARTICLES SKAL HA EN MAX STØRRELSE, OG BLIR MINDRE DERSOM 3 ARTICLES FYLLER OPP EN RAD---->
-                <li>
-                    <article>
-                        <figure class="figure-400px">
-                            <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                        </figure>
-                        <p>Et harum quidem</p>
-                    </article>
-                </li>
-            </ul>
-        </section>
+    <section class="development-section margin-square-2">
+        <h2 class="font-medium border-bottom-thick-yellow">Development</h2>
+        <ul> <!--SKAL BENYTTES FLEXBOX, ARTICLES SKAL HA EN MAX STØRRELSE, OG BLIR MINDRE DERSOM 3 ARTICLES FYLLER OPP EN RAD---->
+            <li>
+                <article>
+                    <figure class="figure-400px">
+                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    </figure>
+                    <p>Et harum quidem</p>
+                </article>
+            </li>
+        </ul>
     </section>
 </main>
 
-<!--Footer--->
+<footer class="dark-gray-bg">
+    <a href="../html/index.html">
+        <img class="logo-img" src="../ressurser/logo1.png">
+    </a>
+    <p>Companyrights Companyname 2023</p>
+    <ul class="footer-ul-flex-list icon-links">
+        <li>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook white-text"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-square-instagram white-text"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin white-text"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
 
 </body>
 </html>

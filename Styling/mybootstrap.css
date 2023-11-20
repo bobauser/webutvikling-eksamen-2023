@@ -27,6 +27,54 @@ body {
     width: 10px;
 }
 
+/*Margin Formater*/
+
+.margin-vertical-2 {
+    margin: 2rem 0;
+}
+
+.margin-square-2 {
+    margin: 2rem;
+}
+
+
+/*Padding Formater*/
+
+.padding-vertical-5 {
+    padding: 5rem 0;
+}
+
+.padding-vertical-4 {
+    padding: 4rem 0;
+}
+
+.padding-vertical-3 {
+    padding: 3rem 0;
+}
+
+.padding-vertical-2 {
+    padding: 3rem 0;
+}
+
+/*Align formater*/
+
+.align-at-middle-60 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.align-at-middle-60 >* {
+    width: 60%;
+}
+
+.align-at-middle-80 >* {
+    width: 80%;
+}
+
 /*Grid Formater*/
 .divide-left-right {
     display: grid;
@@ -43,27 +91,31 @@ body {
     grid-template-columns: auto auto;
 }
 .grid-center {
-    display: grid; /* Ensure it's a grid container */
-    max-width: 80%; /* Adjust this value to control the maximum width */
-    margin: 0 auto; /* This centers the grid and provides dynamic horizontal spacing */
+    display: grid;
+    margin: 0 auto;
     background-size: 100%;
-    grid-template-columns: repeat(2, 1fr); /* creates a two-column layout with equal width */
-    gap: 2rem; /* sets a gap between the grid columns */
-    padding: 2rem; /* optional: adds some padding within the grid */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
     background-color: #f7f7f7;
+}
+
+.grid-center >* {
+    max-width: 60%;
+    width: 100%;
 }
 
 .left {
     grid-area: left;
-    word-wrap: break-word; /* Ensures that text wraps within the container */
-    overflow-wrap: break-word; /* Breaks long words if necessary to prevent overflow */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .right {
     grid-area: right;
     text-align: left;
-    word-wrap: break-word; /* Ensures that text wraps within the container */
-    overflow-wrap: break-word; /* Breaks long words if necessary to prevent overflow */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .text-right {
@@ -76,13 +128,13 @@ body {
 /*FLEXBOX klasser*/
 .content-row-fill-width {
     display: flex;
-    justify-content: space-between; /* This spreads out the items evenly */
-    gap: 1rem; /* Adjust the gap as needed */
+    justify-content: space-between;
+    gap: 1rem;
 }
 .content-row-compress-width {
     display: flex;
-    justify-content: space-around; /* This spreads out the items evenly */
-    gap: 3rem; /* Adjust the gap as needed */
+    justify-content: space-around;
+    gap: 3rem;
 }
 
 .flex-column {
@@ -96,6 +148,14 @@ body {
 
 .display-block {
     display: inline-block;
+}
+
+.flex-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    flex-wrap: wrap;
 }
 
 /*KLASSER*/
@@ -113,7 +173,15 @@ body {
 
 .bg-box {
     background-color: var(--black);
-    padding: 13px 15px 13px 15px;
+    padding: 13px 15px;
+    border-radius: 2px;
+    max-width: fit-content;
+    border: none;
+}
+
+.bg-box-small {
+    background-color: var(--black);
+    padding: 7px 8px;
     border-radius: 2px;
     max-width: fit-content;
     border: none;
@@ -152,12 +220,40 @@ body {
     object-fit: contain;
 }
 
+.article-card {
+    max-width: 350px;
+    min-width: 200px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.article-card figure {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+}
+
+.yellow-box {
+    color: var(--black);
+    padding: 13px 15px;
+    border-radius: 2px;
+    max-width: fit-content;
+    border: none;
+    background-color: var(--gold-yellow);
+    font-weight: bold;
+}
+
 /*FARGER*/
+
+.border-bottom-thick-yellow {
+    border-bottom: 3px solid var(--gold-yellow);
+    padding-bottom: 1rem;
+}
 
 .yellow-text {
     color: var(--gold-yellow);
 }
-.yellow-bg {
+.yellow-bg, .yellow-bg-hover {
     background-color: var(--gold-yellow);
 }
 .light-gray-bg {
@@ -182,11 +278,15 @@ body {
 .dark-gray-bg {
     background-color: var(--dark-gray);
 }
+.white-bg {
+    background-color: var(--white);
+}
 
-.black-text {
+.black-text, .black-text-hover {
     color: var(--black);
     text-decoration: none;
 }
+
 .white-text {
     color: var(--white);
     text-decoration: none;

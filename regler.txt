@@ -23,6 +23,7 @@ About: Navigerer til about.html
 
 
 MOBIL:*
+Canvas benytter < 768px
 NAv greier skal stå under hverandre IKKE BURGER MENY
 
 Contact: Denne knappen skal referere deg til About siden, og skal bla deg ned til contact panelet under
