@@ -159,6 +159,23 @@ body {
     margin: 0;
 }
 
+.flex-list-articles {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.flex-list-gap-2 {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding: 0;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
 /*KLASSER*/
 
 .logo-img {
@@ -167,7 +184,7 @@ body {
 }
 
 .header-element-selected {
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: 3px underline #e6bd43;
     text-underline-offset: 3px;
 }
@@ -215,25 +232,56 @@ body {
     align-items: center;
 }
 
-.figure-200px img {
+.figure-200px img, .figure-400px img {
     width: auto;
     height: 100%;
     object-fit: contain;
 }
 
+.figure-square-grow {
+    display: flex; /* Flexbox will help center the image */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    width: 100%; /* Let the figure grow */
+    min-width: 100px; /* Minimum width is 100px */
+    aspect-ratio: 1 / 1; /* Maintain a 1:1 aspect ratio */
+    overflow: hidden; /* In case the image is larger than the figure element */
+}
+
+.figure-square-grow img {
+    display: block; /* Remove any extra space below the image */
+    max-width: 100%; /* Max width of the image is the width of the figure */
+    max-height: 100%; /* Max height of the image is the height of the figure */
+    object-fit: cover; /* Cover the figure area with the image */
+}
+
+
+/* Assuming .article-card is the direct child of .flex-list */
+.flex-list li {
+    flex: 1 1 200px; /* Sets the flex-basis and allows the item to grow */
+    max-width: 692px; /* The maximum width an item can grow to */
+    margin: 0;
+    box-sizing: border-box; /* Includes padding and borders in the element's total width and height */
+}
+
 .article-card {
-    max-width: 692px;
-    min-width: 200px;
-    width: 100%;
     height: auto;
     overflow: hidden;
 }
+
 .article-card figure {
-    max-width: 692px;
-    width: 100%;
-    height: auto;
     margin: 0;
     padding: 0;
+    /* Ensures the images are responsive and do not overflow their container */
+    width: 100%;
+    height: auto;
+}
+
+/* Ensures the images within figure are responsive */
+.article-card img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes any extra space below the image */
 }
 
 .yellow-box {
@@ -243,7 +291,7 @@ body {
     max-width: fit-content;
     border: none;
     background-color: var(--gold-yellow);
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /*FARGER*/
@@ -311,5 +359,5 @@ body {
 }
 
 .text-bold {
-    font-weight: bold;
+    font-weight: 600;
 }

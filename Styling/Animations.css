@@ -23,7 +23,7 @@
 .yellow-box:hover {
     color: var(--gold-yellow);
     background-color: var(--black);
-    font-weight: normal;
+    font-weight: 300;
     transition: 0.3s;
 }
 .yellow-box:hover > * {
