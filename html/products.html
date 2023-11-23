@@ -15,28 +15,7 @@
 </head>
 <body id="products-grid">
 
-<header>
-    <a href="../html/index.html">
-        <img class="logo-img" src="../ressurser/logo1.png">
-    </a>
-
-    <nav>
-        <ul class="header-ul-flex-list">
-            <li>
-                <a href="../html/index.html">Home</a>
-            </li>
-            <li class="header-element-selected">
-                <a href="../html/products.html">Portfolio</a>
-            </li>
-            <li>
-                <a href="../html/about.html">About</a>
-            </li>
-            <li class="yellow-box">
-                <a href="../html/about.html">Contact</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+<!---Header--->
 
 <main>
 
@@ -53,118 +32,85 @@
     <section class="explore-jobs margin-square-2">
         <h2 class="font-medium border-bottom-thick-yellow">Explore previous jobs</h2>
         <ul class="flex-list">
-            <li><button class="bg-box-small white-bg border-black-2">Branding</button></li>
-            <li><button class="bg-box-small white-bg border-black-2">Design</button></li>
-            <li><button class="bg-box-small white-bg border-black-2">Development</button></li>
+            <li><a href="#branding-section" class="bg-box-small white-bg border-black-2 black-text-hover">Branding</a></li>
+            <li><a href="#design-section" class="bg-box-small white-bg border-black-2 black-text-hover">Design</a></li>
+            <li><a href="#development-section" class="bg-box-small white-bg border-black-2 black-text-hover">Development</a></li>
         </ul>
     </section>
 
-    <section class="branding-section  margin-square-2">
+    <section id="branding-section" class="margin-square-2">
         <h2 class="font-medium border-bottom-thick-yellow">Branding</h2>
-        <ul class="flex-list-articles"> <!--Bytte ut med en DIV?--->
-            <li>
-                <article class="article-card">
-                    <figure class="figure-square-grow">
-                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                    </figure>
-                    <p class="font-medium-small text-bold">Et harum quidem</p>
-                </article>
-            </li>
-            <li>
-                <article class="article-card">
-                    <figure class="figure-square-grow">
-                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                    </figure>
-                    <p class="font-medium-small text-bold">Et harum quidem</p>
-                </article>
-            </li>
-            <li>
-                <article class="article-card">
-                    <figure class="figure-square-grow">
-                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                    </figure>
-                    <p class="font-medium-small text-bold">Et harum quidem</p>
-                </article>
-            </li>
-            <li>
-                <article class="article-card">
-                    <figure class="figure-square-grow">
-                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                    </figure>
-                    <p class="font-medium-small text-bold">Et harum quidem</p>
-                </article>
-            </li>
+        <ul class="flex-list-articles">
+            <article class="article-card">
+                <figure class="figure-square-grow">
+                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                </figure>
+                <p class="font-medium-small text-bold">Et harum quidem</p>
+            </article>
+
+            <article class="article-card">
+                <figure class="figure-square-grow">
+                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                </figure>
+                <p class="font-medium-small text-bold">Et harum quidem</p>
+            </article>
+
+            <article class="article-card">
+                <figure class="figure-square-grow">
+                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                </figure>
+                <p class="font-medium-small text-bold">Et harum quidem</p>
+            </article>
+
+            <article class="article-card">
+                <figure class="figure-square-grow">
+                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                </figure>
+                <p class="font-medium-small text-bold">Et harum quidem</p>
+            </article>
         </ul>
     </section>
 
-    <section class="design-section  margin-square-2">
+    <section id="design-section" class="margin-square-2">
         <h2 class="font-medium border-bottom-thick-yellow">Design</h2>
         <ul class="flex-list-articles">
-            <li>
-                <article>
-                    <figure class="figure-400px">
-                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                    </figure>
-                    <p>Et harum quidem</p>
-                </article>
-            </li>
-            <li>
-                <article>
-                    <figure class="figure-400px">
-                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                    </figure>
-                    <p>Et harum quidem</p>
-                </article>
-            </li>
-            <li>
-                <article>
-                    <figure class="figure-400px">
-                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                    </figure>
-                    <p>Et harum quidem</p>
-                </article>
-            </li>
+            <article class="article-card">
+                <figure class="figure-square-grow">
+                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                </figure>
+                <p class="font-medium-small text-bold">Et harum quidem</p>
+            </article>
+            <article class="article-card">
+                <figure class="figure-square-grow">
+                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                </figure>
+                <p class="font-medium-small text-bold">Et harum quidem</p>
+            </article>
+
         </ul>
     </section>
 
-    <section class="development-section margin-square-2">
+    <section id="development-section" class="margin-square-2">
         <h2 class="font-medium border-bottom-thick-yellow">Development</h2>
-        <ul class="flex-list-articles"> <!--SKAL BENYTTES FLEXBOX, ARTICLES SKAL HA EN MAX STØRRELSE, OG BLIR MINDRE DERSOM 3 ARTICLES FYLLER OPP EN RAD---->
-            <li>
-                <article>
-                    <figure class="figure-400px">
-                        <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
-                    </figure>
-                    <p>Et harum quidem</p>
-                </article>
-            </li>
+        <ul class="flex-list-articles">
+            <article class="article-card">
+                <figure class="figure-square-grow">
+                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                </figure>
+                <p class="font-medium-small text-bold">Et harum quidem</p>
+            </article>
+            <article class="article-card">
+                <figure class="figure-square-grow">
+                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                </figure>
+                <p class="font-medium-small text-bold">Et harum quidem</p>
+            </article>
+
         </ul>
     </section>
 </main>
 
-<footer class="dark-gray-bg">
-    <a href="../html/index.html">
-        <img class="logo-img" src="../ressurser/logo1.png">
-    </a>
-    <p>Companyrights Companyname 2023</p>
-    <ul class="footer-ul-flex-list icon-links">
-        <li>
-            <a href="https://www.facebook.com/" target="_blank">
-                <i class="fa-brands fa-facebook white-text"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/" target="_blank">
-                <i class="fa-brands fa-square-instagram white-text"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/" target="_blank">
-                <i class="fa-brands fa-linkedin white-text"></i>
-            </a>
-        </li>
-    </ul>
-</footer>
+<!---Footer--->
 
 </body>
 </html>

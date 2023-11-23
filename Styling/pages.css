@@ -1,4 +1,4 @@
-.compeling-headline-section {
+#compeling-headline-section {
     position: relative;
     /*background-color: lightgray;*/
     overflow: hidden;
@@ -6,7 +6,7 @@
     gap: 20px;
 }
 
-.compeling-headline-section h1 {
+#compeling-headline-section h1 {
     margin: 0;
 }
 
@@ -22,7 +22,7 @@
     z-index: -1;
 }
 
-.engaging-subheading-section {
+#engaging-subheading-section {
     border-bottom: 2px solid lightgray;
 }
 
@@ -115,4 +115,15 @@
     min-width: 100%;
     width: 100%;
     height: auto;
+}
+
+#scroll-up-arrow {
+    position: fixed; /* Use fixed to keep it in the same place on the screen */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    display: none; /* Start with the button not displayed */
+    /* Add any other styles such as z-index, size, colors, etc. */
+    z-index: 1000; /* Make sure it's above other content */
+    cursor: pointer;
+    /* More styling for the button here */
 }

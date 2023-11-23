@@ -36,6 +36,9 @@ body {
 .margin-square-2 {
     margin: 2rem;
 }
+.no-margin {
+    margin: 0;
+}
 
 
 /*Padding Formater*/
@@ -69,6 +72,15 @@ body {
 
 .align-at-middle-60 >* {
     width: 60%;
+}
+
+.align-at-middle-80 { /*Ødela denne for en annen nå kanskje?*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0;
 }
 
 .align-at-middle-80 >* {
@@ -162,11 +174,15 @@ body {
 .flex-list-articles {
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 3rem 2rem;
     padding: 0;
     flex-wrap: wrap;
     margin: 0;
 }
+.flex-list-articles figure {
+    margin-bottom: 1rem;
+}
+
 .flex-list-gap-2 {
     display: flex;
     list-style: none;
@@ -205,12 +221,6 @@ body {
     border: none;
 }
 
-.white-input {
-    background-color: var(--white);
-    padding: 13px 15px 13px 15px;
-    border-radius: 2px;
-    max-width: fit-content;
-}
 
 .bg-circle {
     background-color: black;
@@ -239,49 +249,61 @@ body {
 }
 
 .figure-square-grow {
-    display: flex; /* Flexbox will help center the image */
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    width: 100%; /* Let the figure grow */
-    min-width: 100px; /* Minimum width is 100px */
-    aspect-ratio: 1 / 1; /* Maintain a 1:1 aspect ratio */
-    overflow: hidden; /* In case the image is larger than the figure element */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 100px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    margin: 0;
 }
 
 .figure-square-grow img {
-    display: block; /* Remove any extra space below the image */
-    max-width: 100%; /* Max width of the image is the width of the figure */
-    max-height: 100%; /* Max height of the image is the height of the figure */
-    object-fit: cover; /* Cover the figure area with the image */
+    height: 100%;
+    object-fit: cover;
+    width: auto;
 }
 
+.adress-hover {
+    width: fit-content;
+}
 
-/* Assuming .article-card is the direct child of .flex-list */
-.flex-list li {
-    flex: 1 1 200px; /* Sets the flex-basis and allows the item to grow */
-    max-width: 692px; /* The maximum width an item can grow to */
+.map {
+    width: 100%;
+    padding: 0;
     margin: 0;
-    box-sizing: border-box; /* Includes padding and borders in the element's total width and height */
+    max-height: 250px;
+    overflow: clip;
 }
+.map iframe {
+    width: 100%;
+    max-height: 250px;
+}
+
+/*
+.article-card figure {
+    margin: 0;
+    padding: 0;
+width: 100%;
+height: auto;
+}
+
+.article-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}*/
 
 .article-card {
     height: auto;
     overflow: hidden;
+    min-width: 200px;
+    max-width: 692px;
+    flex-grow: 1;
 }
-
-.article-card figure {
+.article-card p {
     margin: 0;
-    padding: 0;
-    /* Ensures the images are responsive and do not overflow their container */
-    width: 100%;
-    height: auto;
-}
-
-/* Ensures the images within figure are responsive */
-.article-card img {
-    max-width: 100%;
-    height: auto;
-    display: block; /* Removes any extra space below the image */
 }
 
 .yellow-box {
@@ -341,6 +363,22 @@ body {
 .white-text {
     color: var(--white);
     text-decoration: none;
+}
+
+.row-gap-3 {
+    grid-column-gap: 3rem;
+}
+
+.white-input, .white-input-small {
+    background-color: var(--white);
+    padding: 13px 15px 13px 15px;
+    margin: 5px 0;
+    border-radius: 2px;
+    border: none;
+}
+
+.white-input-small {
+    max-width: fit-content;
 }
 
 /*Font Størrelse*/
