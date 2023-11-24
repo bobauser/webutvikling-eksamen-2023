@@ -59,6 +59,13 @@ body {
     padding: 3rem 0;
 }
 
+.padding-square-2 {
+    padding: 2rem;
+}
+.padding-square-3 {
+    padding: 3rem;
+}
+
 /*Align formater*/
 
 .align-at-middle-60 {

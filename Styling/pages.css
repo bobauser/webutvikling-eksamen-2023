@@ -27,14 +27,14 @@
 }
 
 .aside-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 3rem 3rem 3rem 0;
     z-index: 1;
-    position: fixed;
-    width: 100%;
-    padding: 0;
-    top: 0;
-    right: 0;
-
 }
+
+
 .figure-img-fill-width {
     position: relative;
     overflow: hidden;
@@ -62,12 +62,6 @@
     padding: 3rem 0;
 }
 
-.aside-card {
-    position: relative;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    margin: 3rem;
-}
 
 #about-our-company {
     min-height: 25rem;
@@ -101,20 +95,14 @@
 }
 
 .background-image-figure {
-    top: 0;
     position: absolute;
     min-width: 100%;
-    width: 100%;
+    min-height: 100%;
+    width: auto;
     height: auto;
     background-size: cover;
-    right: 0;
     z-index: -1;
     margin: 0;
-}
-.background-image-figure img {
-    min-width: 100%;
-    width: 100%;
-    height: auto;
 }
 
 #scroll-up-arrow {
