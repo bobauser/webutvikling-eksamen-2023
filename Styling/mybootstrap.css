@@ -36,8 +36,20 @@ body {
 .margin-square-2 {
     margin: 2rem;
 }
+
 .no-margin {
     margin: 0;
+}
+
+.margin-bottom-1em {
+    margin-bottom: 1em;
+}
+
+.margin-bottom-2em {
+    margin-bottom: 2em;
+}
+.margin-top-2em {
+    margin-bottom: 2em;
 }
 
 
@@ -200,6 +212,14 @@ body {
 }
 
 /*KLASSER*/
+
+.original-arrow-rectangel {
+    max-width: 50px;
+    max-height: 70px;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
 
 .logo-img {
     height: 80px;
@@ -394,6 +414,9 @@ height: auto;
     font-size: 1rem;
 }
 .font-medium-small {
+    font-size: 1.5rem;
+}
+.font-normal {
      font-size: 2rem;
  }
 .font-medium {
@@ -405,4 +428,8 @@ height: auto;
 
 .text-bold {
     font-weight: 600;
+}
+
+.no-bold {
+    font-weight: 300;
 }

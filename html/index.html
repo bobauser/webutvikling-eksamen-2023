@@ -14,8 +14,45 @@
 </head>
 <body>
 
-<!---Header--->
+<header>
+    <a href="../html/index.html">
+        <img class="logo-img" src="../ressurser/logo1.png">
+    </a>
 
+    <nav>
+        <ul class="header-ul-flex-list">
+            <li class="header-element-selected">
+                <a href="../html/index.html">Home</a>
+            </li>
+            <li>
+                <a href="../html/products.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="../html/about.html">About</a>
+            </li>
+            <li class="yellow-box">
+                <a href="../html/about.html#contact-us">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div id="scroll-up-arrow">
+    <button class="bg-box dark-gray-bg original-arrow-rectangel " onclick="scrollToTop()">
+          <span class="white-text">
+              <i class="fa-solid fa-arrow-up white-text font-medium-small"></i>
+             <!---   <i class="fa-solid fa-chevron-up white-text font-medium"></i>    -->
+          </span>
+        <script>
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+    </button>
+</div>
 
 <main>
     <section id="compeling-headline-section" class="align-at-middle-60 padding-vertical-5">
@@ -38,7 +75,7 @@
             <img src="../ressurser/placeholder2.jpg" alt="Placeholder bilde">
         </figure>
         <div class="right text-left">
-            <h3 class="font-medium-small">About Our Company</h3>
+            <h3 class="font-normal">About Our Company</h3>
             <p class="margin-vertical-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod. Etiam venenatis sem sit amet interdum viverra. Praesent mi sem, imperdiet ac mi at, vulputate ornare est. Phasellus sodales mauris ac lectus hendrerit, a eleifend massa pharetra. Morbi eu nibh suscipit, ornare ipsum quis, dictum ante. Donec consequat aliquam lorem eu auctor. Praesent a eros et quam posuere pulvinar nec eget dolor. Nunc id scelerisque arcu, at fermentum erat. Morbi sit amet faucibus erat. Praesent ut scelerisque urna.</p>
             <a href="../html/about.html" class="bg-box yellow-bg-hover border-black-4 text-bold black-text-hover ">Read more about us</a>
         </div>
@@ -48,31 +85,31 @@
         <h2 class="font-medium">Our services</h2>
         <section class="content-row-fill-width">
             <article>
-                <span class="font-medium-small">
+                <span class="font-normal">
                     <i class="fa-solid fa-users"></i>
                 </span>
-                <h3 class="font-medium-small">Branding</h3>
+                <h3 class="font-normal">Branding</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
             <article>
-                <span class="font-medium-small">
+                <span class="font-normal">
                     <i class="fa-solid fa-cloud-arrow-up"></i>
                 </span>
-                <h3 class="font-medium-small">Branding</h3>
+                <h3 class="font-normal">Branding</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
             <article>
-                <span class="font-medium-small">
+                <span class="font-normal">
                     <i class="fa-solid fa-wifi"></i>
                 </span>
-                <h3 class="font-medium-small">Branding</h3>
+                <h3 class="font-normal">Branding</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
             <article>
-                <span class="font-medium-small">
+                <span class="font-normal">
                     <i class="fa-solid fa-code"></i>
                 </span>
-                <h3 class="font-medium-small">Branding</h3>
+                <h3 class="font-normal">Branding</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
         </section>
@@ -86,23 +123,30 @@
     </section>
 </main>
 
-<div id="scroll-up-arrow">
-    <button class="bg-circle" onclick="scrollToTop()">
-          <span class="white-text">
-             <i class="fa-solid fa-chevron-up white-text font-medium"></i>
-          </span>
-        <script>
-            function scrollToTop() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            }
-        </script>
-    </button>
-</div>
 
-<!---Footer--->
+<footer class="dark-gray-bg">
+    <a href="../html/index.html">
+        <img class="logo-img" src="../ressurser/logo1.png">
+    </a>
+    <p>Companyrights Companyname 2023</p>
+    <ul class="footer-ul-flex-list icon-links">
+        <li>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook white-text"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-square-instagram white-text"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin white-text"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
 
 </body>
 </html>
