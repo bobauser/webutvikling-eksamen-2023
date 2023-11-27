@@ -3,7 +3,11 @@
     /*background-color: lightgray;*/
     overflow: hidden;
 
+}
+
+#compeling-headline-section section {
     gap: 20px;
+    margin: 3rem 0;
 }
 
 #compeling-headline-section h1 {
@@ -20,6 +24,10 @@
     background-size: cover;
     right: 0;
     z-index: -1;
+}
+
+.video-replacement {
+    display: none;
 }
 
 #engaging-subheading-section {
