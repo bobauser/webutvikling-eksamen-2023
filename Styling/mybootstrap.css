@@ -59,27 +59,31 @@ body {
 
 /*Padding Formater*/
 
+.padding-vertical-7 {
+    padding: 7rem 0 !important;
+}
+
 .padding-vertical-5 {
-    padding: 5rem 0;
+    padding: 5rem 0 !important;
 }
 
 .padding-vertical-4 {
-    padding: 4rem 0;
+    padding: 4rem 0 !important;
 }
 
 .padding-vertical-3 {
-    padding: 3rem 0;
+    padding: 3rem 0 !important;
 }
 
 .padding-vertical-2 {
-    padding: 3rem 0;
+    padding: 3rem 0 !important;
 }
 
 .padding-square-2 {
-    padding: 2rem;
+    padding: 2rem !important;
 }
 .padding-square-3 {
-    padding: 3rem;
+    padding: 3rem !important;
 }
 
 /*Align formater*/
@@ -192,6 +196,10 @@ body {
     padding: 0;
     flex-wrap: wrap;
     margin: 0;
+}
+
+.flex-list li {
+    margin-bottom: 1rem;
 }
 
 .flex-list-articles {

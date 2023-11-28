@@ -75,8 +75,7 @@
 
     .flex-list {
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         /*list-style: none;
         gap: 1rem;
         padding: 0;
