@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Company Name - Home</title>
+    <meta name="author" content="Edvin Ulvestad">
+    <meta name="description" content="Eksamen Prosjektet til Edvin Ulvestad, 29. Nov 2023">
+
+    <meta property="og:title" content="Eksamens Prosjekt 2023">
+    <meta property="og:url" content="https://schema.org/AggregateRating">
+    <meta property="og:description" content="Eksamen Prosjektet til Edvin Ulvestad, 29. Nov 2023">
+    <meta property="og:image" content="D:\StudieGreier\Webutvikling\webutvikling-eksamen-2023\ressurser\logo1.png">
+
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../Styling/pages.css">
@@ -19,19 +28,23 @@
         <img class="logo-img" src="../ressurser/logo1.png" alt="Bilde av logo i header">
     </a>
 
-    <nav>
-        <ul class="header-ul-flex-list">
-            <li class="header-element-selected">
-                <a href="../html/index.html">Home</a>
+    <nav aria-label="Breadcrumb">
+        <ul class="header-ul-flex-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="header-element-selected" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="../html/index.html" itemprop="name">Home</a>
+                <meta itemprop="position" content="1" />
             </li>
-            <li>
-                <a href="../html/products.html">Portfolio</a>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="../html/products.html" itemprop="name">Portfolio</a>
+                <meta itemprop="position" content="1" />
             </li>
-            <li>
-                <a href="../html/about.html">About</a>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="../html/about.html" itemprop="name">About</a>
+                <meta itemprop="position" content="1" />
             </li>
-            <li class="yellow-box">
-                <a href="../html/about.html#contact-us">Contact</a>
+            <li class="yellow-box" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="../html/about.html#contact-us" itemprop="name">Contact</a>
+                <meta itemprop="position" content="1" />
             </li>
         </ul>
     </nav>
@@ -55,92 +68,92 @@
 </div>
 
 <main>
-    <section id="compeling-headline-section" class="align-at-middle-60 padding-vertical-5">
-        <video autoplay muted loop id="background-video">
+    <section id="compeling-headline-section" class="align-at-middle-60 padding-vertical-5" itemscope itemtype="https://schema.org/WebPageElement">
+        <video autoplay muted loop id="background-video" itemprop="video">
             <source src="../ressurser/mountains.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <h1 class="font-big">Compelling headline</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit justo magna, et varius sem accumsan at. Sed ullamcorper magna sed lacinia faucibus. Cras id odio nisi. Ut quis placerat massa. Ut ac erat eleifend, vehicula sapien eget, pretium sapien. Sed id vestibulum purus. Ut bibendum purus ut pharetra pretium.</p>
-        <a href="#services-section" class="yellow-bg-hover bg-box text-bold black-text-hover">Read more about our services</a>
+        <h1 class="font-big" itemprop="headline">Compelling headline</h1>
+        <p itemprop="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <a href="#services-section" class="yellow-bg-hover bg-box text-bold black-text-hover" itemprop="url">Read more about our services</a>
     </section>
 
-    <section id="engaging-subheading-section" class="align-at-middle-60 padding-vertical-3">
-        <h2 class="font-medium">Engaging subheading. What can you help your visitors with</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod. Etiam venenatis sem sit amet interdum viverra. Praesent mi sem, imperdiet ac mi at, vulputate ornare est. Phasellus sodales mauris ac lectus hendrerit, a eleifend massa pharetra. Morbi eu nibh suscipit, ornare ipsum quis, dictum ante. Donec consequat aliquam lorem eu auctor. Praesent a eros et quam posuere pulvinar nec eget dolor. Nunc id scelerisque arcu, at fermentum erat. Morbi sit amet faucibus erat. Praesent ut scelerisque urna.</p>
+    <section id="engaging-subheading-section" class="align-at-middle-60 padding-vertical-3" itemscope itemtype="https://schema.org/WebPageElement">
+        <h2 class="font-medium" itemprop="headline">Engaging subheading...</h2>
+        <p itemprop="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
     </section>
 
-    <article id="about-company-section" class=" align-vertically yellow-bg divide-left-right grid-auto align-at-middle-80">
-        <figure class="left figure-400px">
+    <article id="about-company-section" class="align-vertically yellow-bg divide-left-right grid-auto align-at-middle-80" itemscope itemtype="https://schema.org/AboutPage">
+        <figure class="left figure-400px" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
             <img src="../ressurser/placeholder2.jpg" alt="Placeholder bilde">
         </figure>
-        <div class="right text-left">
+        <div class="right text-left" itemprop="description">
             <h3 class="font-normal">About Our Company</h3>
-            <p class="margin-vertical-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod. Etiam venenatis sem sit amet interdum viverra. Praesent mi sem, imperdiet ac mi at, vulputate ornare est. Phasellus sodales mauris ac lectus hendrerit, a eleifend massa pharetra. Morbi eu nibh suscipit, ornare ipsum quis, dictum ante. Donec consequat aliquam lorem eu auctor. Praesent a eros et quam posuere pulvinar nec eget dolor. Nunc id scelerisque arcu, at fermentum erat. Morbi sit amet faucibus erat. Praesent ut scelerisque urna.</p>
-            <a href="../html/about.html" class="bg-box yellow-bg-hover border-black-4 text-bold black-text-hover ">Read more about us</a>
+            <p class="margin-vertical-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <a href="../html/about.html" class="bg-box yellow-bg-hover border-black-4 text-bold black-text-hover " itemprop="url">Read more about us</a>
         </div>
     </article>
 
-    <section id="services-section" class="align-at-middle-60 content-width-80">
+    <section id="services-section" class="align-at-middle-60 content-width-80" itemscope itemtype="https://schema.org/Service">
         <h2 class="font-medium">Our services</h2>
         <div class="content-row-fill-width">
-            <article>
+            <article itemprop="brand" itemscope itemtype="https://schema.org/Brand">
                 <span class="font-normal">
                     <i class="fa-solid fa-users"></i>
                 </span>
-                <h3 class="font-normal">Branding</h3>
+                <h3 class="font-normal" itemprop="name">Branding</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
-            <article>
+            <article itemprop="brand" itemscope itemtype="https://schema.org/Brand">
                 <span class="font-normal">
                     <i class="fa-solid fa-cloud-arrow-up"></i>
                 </span>
-                <h3 class="font-normal">Branding</h3>
+                <h3 class="font-normal" itemprop="name">Branding</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
-            <article>
+            <article itemprop="brand" itemscope itemtype="https://schema.org/Brand">
                 <span class="font-normal">
                     <i class="fa-solid fa-wifi"></i>
                 </span>
-                <h3 class="font-normal">Branding</h3>
+                <h3 class="font-normal" itemprop="name">Branding</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
-            <article>
+            <article itemprop="brand" itemscope itemtype="https://schema.org/Brand">
                 <span class="font-normal">
                     <i class="fa-solid fa-code"></i>
                 </span>
-                <h3 class="font-normal">Branding</h3>
+                <h3 class="font-normal" itemprop="name">Branding</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
         </div>
     </section>
 
-    <section id="newsletter-section" class="align-at-middle-60 lighter-gray-bg">
+    <section id="newsletter-section" class="align-at-middle-60 lighter-gray-bg" itemscope itemtype="https://schema.org/WPAdBlock">
         <h2 class="font-medium">Sign up for our newsletter</h2>
-        <form>
-            <input type="email" class="bg-box white-input" placeholder="Nora@epost.no"><button type="submit" class="bg-box yellow-bg-hover black-text-hover text-bold">Sign me up</button>
+        <form itemprop="potentialAction" itemscope itemtype="https://schema.org/SubscribeAction">
+            <input type="email" class="bg-box white-input" placeholder="Nora@epost.no" itemprop="recipient"><button type="submit" class="bg-box yellow-bg-hover black-text-hover text-bold" itemprop="action">Sign me up</button>
         </form>
     </section>
 </main>
 
-<footer class="dark-gray-bg">
-    <a href="../html/index.html">
-        <img class="logo-img" src="../ressurser/logo1.png" alt="Bilde av logo i footer">
+<footer class="dark-gray-bg" itemscope itemtype="http://schema.org/WPFooter">
+    <a href="../html/index.html" itemprop="url">
+        <img class="logo-img" src="../ressurser/logo1.png" alt="Bilde av logo i footer" itemprop="logo">
     </a>
-    <p>Companyrights Companyname 2023</p>
-    <ul class="footer-ul-flex-list icon-links">
+    <p itemprop="copyright">Companyrights Companyname 2023</p>
+    <ul class="footer-ul-flex-list icon-links" itemprop="sameAs">
         <li>
-            <a href="https://www.facebook.com/" target="_blank">
+            <a href="https://www.facebook.com/" target="_blank" itemprop="url">
                 <i class="fa-brands fa-facebook white-text"></i>
             </a>
         </li>
         <li>
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/" target="_blank" itemprop="url">
                 <i class="fa-brands fa-square-instagram white-text"></i>
             </a>
         </li>
         <li>
-            <a href="https://www.linkedin.com/" target="_blank">
+            <a href="https://www.linkedin.com/" target="_blank" itemprop="url">
                 <i class="fa-brands fa-linkedin white-text"></i>
             </a>
         </li>

@@ -19,19 +19,23 @@
         <img class="logo-img" src="../ressurser/logo1.png" alt="Bilde av logo i header">
     </a>
 
-    <nav>
-        <ul class="header-ul-flex-list">
-            <li class="header-element-selected">
-                <a href="../html/index.html">Home</a>
+    <nav aria-label="Breadcrumb">
+        <ul class="header-ul-flex-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="header-element-selected" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="../html/index.html" itemprop="name">Home</a>
+                <meta itemprop="position" content="1" />
             </li>
-            <li>
-                <a href="../html/products.html">Portfolio</a>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="../html/products.html" itemprop="name">Portfolio</a>
+                <meta itemprop="position" content="1" />
             </li>
-            <li>
-                <a href="../html/about.html">About</a>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="../html/about.html" itemprop="name">About</a>
+                <meta itemprop="position" content="1" />
             </li>
-            <li class="yellow-box">
-                <a href="../html/about.html#contact-us">Contact</a>
+            <li class="yellow-box" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="../html/about.html#contact-us" itemprop="name">Contact</a>
+                <meta itemprop="position" content="1" />
             </li>
         </ul>
     </nav>
@@ -134,24 +138,24 @@
 
 </main>
 
-<footer class="dark-gray-bg">
-    <a href="../html/index.html">
-        <img class="logo-img" src="../ressurser/logo1.png" alt="Bilde av logo i footer">
+<footer class="dark-gray-bg" itemscope itemtype="http://schema.org/WPFooter">
+    <a href="../html/index.html" itemprop="url">
+        <img class="logo-img" src="../ressurser/logo1.png" alt="Bilde av logo i footer" itemprop="logo">
     </a>
-    <p>Companyrights Companyname 2023</p>
-    <ul class="footer-ul-flex-list icon-links">
+    <p itemprop="copyright">Companyrights Companyname 2023</p>
+    <ul class="footer-ul-flex-list icon-links" itemprop="sameAs">
         <li>
-            <a href="https://www.facebook.com/" target="_blank">
+            <a href="https://www.facebook.com/" target="_blank" itemprop="url">
                 <i class="fa-brands fa-facebook white-text"></i>
             </a>
         </li>
         <li>
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/" target="_blank" itemprop="url">
                 <i class="fa-brands fa-square-instagram white-text"></i>
             </a>
         </li>
         <li>
-            <a href="https://www.linkedin.com/" target="_blank">
+            <a href="https://www.linkedin.com/" target="_blank" itemprop="url">
                 <i class="fa-brands fa-linkedin white-text"></i>
             </a>
         </li>
