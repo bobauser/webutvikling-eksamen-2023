@@ -27,22 +27,12 @@ footer {
 }
 
 .icon-links li i {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-    align-items: center;
     font-size: 2rem;
 }
 
 .icon-links li a {
     text-decoration: none;
 
-}
-.header-ul-flex-list {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-    align-items: center;
 }
 .icon-links {
     display: flex;
@@ -51,3 +41,9 @@ footer {
     align-items: center;
 }
 
+.header-ul-flex-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+}

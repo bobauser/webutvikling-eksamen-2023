@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>About</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="../ressurser/favikon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../ressurser/favikon.png" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../Styling/pages.css">
     <link rel="stylesheet" type="text/css" href="../Styling/mybootstrap.css">
@@ -11,6 +19,9 @@
     <link rel="stylesheet" type="text/css" href="../Styling/Animations.css">
     <link rel="stylesheet" type="text/css" href="../icons/css/all.css">
 
+
+    <link rel="stylesheet" type="text/css" href="../Styling/MobileQuery.css">
+    <link rel="stylesheet" type="text/css" href="../Styling/Mobile%20mybootstrap.css">
 </head>
 <body>
 
@@ -41,12 +52,31 @@
     </nav>
 </header>
 
+<aside>
+    <div id="scroll-up-arrow">
+        <button class="bg-box dark-gray-bg original-arrow-rectangel" onclick="scrollToTop()">
+          <span class="white-text">
+              <i class="fa-solid fa-arrow-up white-text font-medium-small"></i>
+              <!---   <i class="fa-solid fa-chevron-up white-text font-medium"></i>    -->
+          </span>
+            <script>
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            </script>
+        </button>
+    </div>
+</aside>
+
 <main>
 
-    <section id="about-our-company" class="grid-50-50 divide-left-right">
-        <figure class="background-image-figure">
+    <section id="about-our-company" class="grid-50-50 divide-left-right laptop-background">
+        <!---<figure class="background-image-figure">
             <img src="../ressurser/jegfantbildet;).png" alt="About Image">
-        </figure>
+        </figure>--->
         <aside class="aside-card padding-square-3 right">
             <h2 class="font-small no-margin no-bold margin-bottom-1em">Company Name</h2>
             <h1 class="font-normal text-bold no-margin">About Our Company</h1>

@@ -1,9 +1,17 @@
+body {
+    max-width: 1600px;
+}
+
 #compeling-headline-section {
     position: relative;
     /*background-color: lightgray;*/
     overflow: hidden;
 
+}
+
+#compeling-headline-section section {
     gap: 20px;
+    margin: 3rem 0;
 }
 
 #compeling-headline-section h1 {
@@ -20,6 +28,23 @@
     background-size: cover;
     right: 0;
     z-index: -1;
+}
+
+.video-replacement::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.568);
+    z-index: 1;
+}
+
+.video-replacement >* {
+    position: relative;
+    z-index: 2;
 }
 
 #engaging-subheading-section {

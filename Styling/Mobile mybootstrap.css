@@ -1,0 +1,113 @@
+@media screen and (max-width: 755px) {
+    /*Grid Formater*/
+    .divide-left-right {
+        display: grid;
+        grid-template-areas:
+        "left"
+        "right";
+        grid-template-columns: 80%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .grid-40-60 {
+        grid-template-rows: 40% 60%;
+    }
+
+    .grid-50-50 {
+        grid-template-rows: 50% 50%;
+    }
+
+    .grid-auto {
+        grid-template-rows: auto auto;
+    }
+
+
+    .left {
+        grid-area: left;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right {
+        grid-area: right;
+        text-align: left;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right p, .left p {
+        width: 50%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .right figure, .left figure {
+        margin: 0;
+    }
+
+    .align-at-middle-60 > *,
+    .align-at-middle-80 > * {
+        width: 100%; /* Barn tar full bredde for å tillate sentrering */
+        max-width: none; /* Fjerner max-width begrensning om det er satt */
+        margin: 0 auto;
+    }
+
+
+    .figure-400px {
+        max-width: 400px;
+        max-height: 400px;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+
+    .flex-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /*list-style: none;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;*/
+    }
+
+    .flex-list-articles {
+        display: flex;
+        list-style: none;
+        gap: 3rem 2rem;
+        padding: 0;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .flex-list-articles figure {
+        margin-bottom: 1rem;
+    }
+
+    .flex-list-gap-2 {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        padding: 0;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .content-row-fill-width {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+}

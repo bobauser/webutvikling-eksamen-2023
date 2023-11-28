@@ -8,9 +8,13 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
 
 .icon-list {
     display: flex;
@@ -212,6 +216,15 @@ body {
 }
 
 /*KLASSER*/
+.video-replacement {
+    background: none;
+}
+
+.laptop-background {
+    background-image: url("../ressurser/jegfantbildet;).png");
+    background-size: cover;
+    padding: 0 0 1rem 0;
+}
 
 .original-arrow-rectangel {
     max-width: 50px;
