@@ -40,12 +40,31 @@
     </nav>
 </header>
 
+<aside>
+    <div id="scroll-up-arrow">
+        <button class="bg-box dark-gray-bg original-arrow-rectangel" onclick="scrollToTop()">
+          <span class="white-text">
+              <i class="fa-solid fa-arrow-up white-text font-medium-small"></i>
+              <!---   <i class="fa-solid fa-chevron-up white-text font-medium"></i>    -->
+          </span>
+            <script>
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            </script>
+        </button>
+    </div>
+</aside>
+
 <main>
 
-    <section id="about-our-company" class="grid-50-50 divide-left-right">
-        <figure class="background-image-figure">
+    <section id="about-our-company" class="grid-50-50 divide-left-right laptop-background">
+        <!---<figure class="background-image-figure">
             <img src="../ressurser/jegfantbildet;).png" alt="About Image">
-        </figure>
+        </figure>--->
         <aside class="aside-card padding-square-3 right">
             <h2 class="font-small no-margin no-bold margin-bottom-1em">Company Name</h2>
             <h1 class="font-normal text-bold no-margin">About Our Company</h1>

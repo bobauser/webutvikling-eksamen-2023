@@ -69,4 +69,45 @@
         align-items: center;
     }
 
+
+
+
+
+    .flex-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /*list-style: none;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;*/
+    }
+
+    .flex-list-articles {
+        display: flex;
+        list-style: none;
+        gap: 3rem 2rem;
+        padding: 0;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .flex-list-articles figure {
+        margin-bottom: 1rem;
+    }
+
+    .flex-list-gap-2 {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        padding: 0;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .content-row-fill-width {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
 }

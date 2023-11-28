@@ -40,6 +40,26 @@
     </nav>
 </header>
 
+<aside>
+    <div id="scroll-up-arrow">
+        <button class="bg-box dark-gray-bg original-arrow-rectangel" onclick="scrollToTop()">
+          <span class="white-text">
+              <i class="fa-solid fa-arrow-up white-text font-medium-small"></i>
+              <!---   <i class="fa-solid fa-chevron-up white-text font-medium"></i>    -->
+          </span>
+            <script>
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            </script>
+        </button>
+    </div>
+</aside>
+
+
 <main>
 
     <section id="portfolio-section">

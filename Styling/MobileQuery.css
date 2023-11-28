@@ -10,10 +10,6 @@
         margin: 0;
     }
 
-    #scroll-up-arrow {
-        display: none;
-    }
-
     .header-ul-flex-list {
         padding: 0;
         display: flex;
@@ -35,15 +31,32 @@
 
     .video-replacement {
         display: block;
-        top: -10%;
-        position: absolute;
         min-width: 100%;
         min-height: 100%;
         width: auto;
         height: auto;
-        right: 0;
-        z-index: -1;
+
+
+        background-image: url("../ressurser/jegfantbildet;).png");
         background-size: cover;
+        padding: 0 0 1rem 0;
+    }
+
+    .video-replacement::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.568);
+        z-index: 1;
+    }
+
+    .video-replacement >* {
+        position: relative;
+        z-index: 2;
     }
 
     #portfolio-section header {
@@ -61,5 +74,27 @@
         text-align: center;
         background: rgba(255, 255, 255, 0.568);
         justify-content: center;
+    }
+
+    footer {
+        background-color: var(--dark-gray);
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        padding: 3rem 20px 3rem 20px;
+        align-items: center;
+    }
+
+    .icon-links li a {
+        text-decoration: none;
+
+    }
+    .icon-links {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 0;
     }
 }

@@ -10,32 +10,34 @@
     text-underline-offset: 3px;
 }
 
-.yellow-bg-hover, .yellow-box, .yellow-box a, .yellow-box p,.black-text-hover p, .black-text-hover a, .article-card, .article-card p, .white-bg, .adress-hover, .adress-hover i, .white-input {
+.yellow-bg-hover, .yellow-box, .yellow-box a, .yellow-box p,.black-text-hover p, .black-text-hover a, .article-card, .article-card p, .white-bg, .adress-hover, .adress-hover i, .white-input, .original-arrow-rectangel {
     transition: 0.3s;
 }
 
 .yellow-bg-hover:hover, .white-bg:hover {
     background-color: var(--black);
     box-shadow: 0 0 20px var(--gold-yellow);
-    transition: 0.3s;
 }
 
 .black-text-hover:hover {
     color: var(--gold-yellow);
     box-shadow: 0 0 20px var(--gold-yellow);
-    transition: 0.3s;
 }
 
 .yellow-box:hover {
     color: var(--gold-yellow);
     box-shadow: 0 0 20px var(--gold-yellow);
     background-color: var(--black);
-    transition: 0.3s;
 }
 
 .yellow-box:hover > * {
     transition: 0.3s;
     color: var(--gold-yellow);
+}
+
+.original-arrow-rectangel:hover {
+    background-color: var(--black);
+    border-radius: 20px;
 }
 
 .article-card {
