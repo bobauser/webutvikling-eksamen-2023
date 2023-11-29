@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../Styling/components.css">
+    <link rel="stylesheet" href="../Styling/mybootstrap.css">
     <link rel="stylesheet" href="../icons/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<!--     <i class="fa-solid fa-arrow-up"></i>
+----->
+
 <aside>
-  <div>
-    <!--     <i class="fa-solid fa-arrow-up"></i>
-    ----->
-      <button  class="bg-circle" onclick="scrollToTop()">
+
+  <div id="scroll-up-arrow">
+      <button class="bg-circle" onclick="scrollToTop()">
           <span class="white-text">
              <i class="fa-solid fa-chevron-up white-text font-medium"></i>
           </span>
+          <script>
+              function scrollToTop() {
+                  window.scrollTo({
+                      top: 0,
+                      behavior: 'smooth'
+                  });
+              }
+          </script>
       </button>
   </div>
-    <script>
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    </script>
+
 </aside>
 
 </body>

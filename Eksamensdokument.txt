@@ -1,0 +1,8 @@
+Eksamensdokument
+
+Jeg har gått for kravene til A
+
+Jeg designet CSS-en min til å bli en Tailwind lignende oppsett (skrev mybootstrap)
+
+Inntil nå (kl 13 den 29.) så har jeg ikke implementert en Mobile-First approach, dette burde jeg ha gjort i fra starten, og la merke til etterhvert at ble vanskelig å få til, etter å ha designet nettsiden for pc
+

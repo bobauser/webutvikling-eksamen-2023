@@ -3,95 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <title>About</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../icons/css/all.css">
 
+    <link rel="icon" href="../ressurser/favikon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../ressurser/favikon.png" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Styling/pages.css">
+    <link rel="stylesheet" type="text/css" href="../Styling/mybootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../Styling/components.css">
+    <link rel="stylesheet" type="text/css" href="../Styling/Animations.css">
+    <link rel="stylesheet" type="text/css" href="../icons/css/all.css">
+
+
+    <link rel="stylesheet" type="text/css" href="../Styling/MobileQuery.css">
+    <link rel="stylesheet" type="text/css" href="../Styling/Mobile%20mybootstrap.css">
 </head>
 <body>
-<!--Header--->
+
+<header>
+    <a href="../html/index.html">
+        <img class="logo-img" src="../ressurser/logo1.png" alt="Bilde av logo i header">
+    </a>
+
+    <nav aria-label="Breadcrumb">
+        <ul class="header-ul-flex-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="header-element-selected" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="../html/index.html" itemprop="name">Home</a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="../html/products.html" itemprop="name">Portfolio</a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="../html/about.html" itemprop="name">About</a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <li class="yellow-box" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="../html/about.html#contact-us" itemprop="name">Contact</a>
+                <meta itemprop="position" content="1" />
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<aside>
+    <div id="scroll-up-arrow">
+        <button class="bg-box dark-gray-bg original-arrow-rectangel" onclick="scrollToTop()">
+          <span class="white-text">
+              <i class="fa-solid fa-arrow-up white-text font-medium-small"></i>
+              <!---   <i class="fa-solid fa-chevron-up white-text font-medium"></i>    -->
+          </span>
+            <script>
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            </script>
+        </button>
+    </div>
+</aside>
 
 <main>
 
-    <section class="about-our-company">
-        <img src="path-to-your-image.jpg" alt="About Image">
-        <h1>About Our Company</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod. Etiam venenatis sem sit amet interdum viverra. Praesent mi sem, imperdiet ac mi at, vulputate ornare est. Phasellus sodales mauris ac lectus hendrerit, a eleifend massa pharetra. Morbi eu nibh suscipit, ornare ipsum quis, dictum ante. Donec consequat aliquam lorem eu auctor. Praesent a eros et quam posuere pulvinar nec eget dolor. Nunc id scelerisque arcu, at fermentum erat. Morbi sit amet faucibus erat. Praesent ut scelerisque urna.</p>
-        <a href="#">Get in touch with us</a>
+    <section id="about-our-company" class="grid-50-50 divide-left-right laptop-background">
+        <!---<figure class="background-image-figure">
+            <img src="../ressurser/jegfantbildet;).png" alt="About Image">
+        </figure>--->
+        <aside class="aside-card padding-square-3 right">
+            <h2 class="font-small no-margin no-bold margin-bottom-1em">Company Name</h2>
+            <h1 class="font-normal text-bold no-margin">About Our Company</h1>
+            <p class="margin-bottom-2em">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod. Etiam venenatis sem sit amet interdum viverra. Praesent mi sem, imperdiet ac mi at, vulputate ornare est. Phasellus sodales mauris ac lectus hendrerit, a eleifend massa pharetra. Morbi eu nibh suscipit, ornare ipsum quis, dictum ante. Donec consequat aliquam lorem eu auctor. Praesent a eros et quam posuere pulvinar nec eget dolor. Nunc id scelerisque arcu, at fermentum erat. Morbi sit amet faucibus erat. Praesent ut scelerisque urna.</p>
+            <a href="#contact-us" class="bg-box yellow-bg-hover text-bold black-text-hover margin-top-2em">Get in touch with us</a>
+        </aside>
     </section>
 
-    <section class="our-services-section">
-        <h2>Our Services</h2>
-        <div> <!--For GRIDdet. Fjerne?---->
+    <section class="our-services-section align-at-middle-60 content-width-80">
+        <h2 class="font-medium">Our Services</h2>
+        <section class="content-row-fill-width">
             <article>
-                <i class="fa-solid fa-users"></i>
-                <h3>Branding</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod.</p>
+                <span class="font-normal">
+                    <i class="fa-solid fa-users"></i>
+                </span>
+                <h3 class="font-normal">Branding</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
             <article>
-                <i class="fa-solid fa-cloud-arrow-up"></i>
-                <h3>Branding</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod.</p>
+                <span class="font-normal">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </span>
+                <h3 class="font-normal">Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
             <article>
-                <i class="fa-solid fa-code"></i>
-                <h3>Branding</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod.</p>
+                <span class="font-normal">
+                    <i class="fa-solid fa-wifi"></i>
+                </span>
+                <h3 class="font-normal">Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
             <article>
-                <i class="fa-solid fa-wifi"></i>
-                <h3>Branding</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod.</p>
+                <span class="font-normal">
+                    <i class="fa-solid fa-code"></i>
+                </span>
+                <h3 class="font-normal">Support</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </article>
-        </div>
+        </section>
     </section>
 
-    <section class="our-clients">
-        <h2>Some of our clients</h2>
-        <div class="clients-grid">
+    <section class="our-clients align-vertically yellow-bg">
+        <h2 class="font-medium">Some of our clients</h2>
+        <div class="clients-grid content-row-compress-width">
             <img src="../ressurser/logo1.png" alt="Client Logo nr 1">
             <img src="../ressurser/logo2.png" alt="Client Logo nr 1">
             <img src="../ressurser/logo3.png" alt="Client Logo nr 1">
         </div>
     </section>
 
-    <section class="contact-us">
-        <form>
-            <h2>Send us a message</h2>
-            <label for="name-input">Name</label>
-            <input id="name-input" type="text" name="name" placeholder="Ola Nordmann...">
-            <label for="subject-input">Subject</label>
-            <input id="subject-input" type="text" name="subject" placeholder="Branding...">
-            <label for="message-input">Message</label>
-            <textarea id="message-input" name="message" placeholder="Message"></textarea>
-            <button type="submit">Send message</button>
-        </form>
-        <aside>
-            <h2>Contact information</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed lectus vitae ligula suscipit euismod. Etiam venenatis sem sit amet interdum viverra. Praesent mi sem, imperdiet ac mi at, vulputate ornare est. Phasellus sodales mauris ac lectus hendrerit, a eleifend massa pharetra. Morbi eu nibh suscipit, ornare ipsum quis, dictum ante. Donec consequat aliquam lorem eu auctor. Praesent a eros et quam posuere pulvinar nec eget dolor. Nunc id scelerisque arcu, at fermentum erat. Morbi sit amet faucibus erat. Praesent ut scelerisque urna.</p>
-            <ul>
-                <li>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Adresse</span>
-                </li>
-                <li>
-                    <i class="fa-solid fa-phone"></i>
-                    <span>99 88 77 66</span>
-                </li>
-                <li>
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>epost@mail.com</span>
-                </li>
-            </ul>
-        </aside>
+    <section id="contact-us" class="align-at-middle-60 lighter-gray-bg">
+        <h2 class="font-medium text-bold">Contact us</h2>
+        <section class="divide-left-right grid-50-50 row-gap-3">
+            <form class="left flex-column text-left">
+                <h2>Send us a message</h2>
+                <label for="name-input">Name</label>
+                <input class="white-input" id="name-input" type="text" name="name" placeholder="Ola Nordmann...">
+                <label for="subject-input">Subject</label>
+                <input class="white-input" id="subject-input" type="text" name="subject" placeholder="Branding...">
+                <label for="message-input">Message</label>
+                <textarea class="white-input" id="message-input" name="message" placeholder="Message"></textarea>
+                <button type="submit" class="bg-box yellow-bg-hover text-bold black-text-hover">Send message</button>
+            </form>
+            <aside class="right">
+                <h2>Contact information</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam suscipit justo magna, et varius sem accumsan at. Sed ullamcorper magna sed lacinia faucibus. Cras id odio nisi. Ut quis placerat massa. Ut ac erat eleifend</p>
+                <ul class="icon-list">
+                    <li class="adress-hover">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Adresse</span>
+                    </li>
+                    <li class="adress-hover">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>99 88 77 66</span>
+                    </li>
+                    <li class="adress-hover">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>epost@mail.com</span>
+                    </li>
+                </ul>
+            </aside>
+        </section>
     </section>
 
-    <!-- Map Section -->
     <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2279240369476!2d-74.01573587443522!3d40.71299873755517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a197c06b7cb%3A0x40a06c78f79e5de6!2sOne%20World%20Trade%20Center!5e0!3m2!1sno!2sno!4v1700054363046!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.18844106045!2d11.350228377099208!3d59.12924747451803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700232668308!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
 </main>
-<!--Footer--->
+
+<footer class="dark-gray-bg" itemscope itemtype="http://schema.org/WPFooter">
+    <a href="../html/index.html" itemprop="url">
+        <img class="logo-img" src="../ressurser/logo1.png" alt="Bilde av logo i footer" itemprop="logo">
+    </a>
+    <p itemprop="copyright">Companyrights Companyname 2023</p>
+    <ul class="footer-ul-flex-list icon-links" itemprop="sameAs">
+        <li>
+            <a href="https://www.facebook.com/" target="_blank" itemprop="url">
+                <i class="fa-brands fa-facebook white-text"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/" target="_blank" itemprop="url">
+                <i class="fa-brands fa-square-instagram white-text"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/" target="_blank" itemprop="url">
+                <i class="fa-brands fa-linkedin white-text"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
 
 </body>
 </html>

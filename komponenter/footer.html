@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <title>footer</title>
     <link rel="stylesheet" href="../Styling/components.css">
+    <link rel="stylesheet" href="../Styling/mybootstrap.css">
+    <link rel="stylesheet" href="../Styling/Animations.css">
     <link rel="stylesheet" href="../icons/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<footer class="dark-gray-bg">
-    <a href="../html/index.html">
-        <img class="logo-img" src="../ressurser/logo1.png">
+<footer class="dark-gray-bg" itemscope itemtype="http://schema.org/WPFooter">
+    <a href="../html/index.html" itemprop="url">
+        <img class="logo-img" src="../ressurser/logo1.png" alt="Bilde av logo i footer" itemprop="logo">
     </a>
-    <p>Companyrights Companyname 2023</p>
-    <ul class="footer-ul-flex-list icon-links">
+    <p itemprop="copyright">Companyrights Companyname 2023</p>
+    <ul class="footer-ul-flex-list icon-links" itemprop="sameAs">
         <li>
-            <a href="https://www.facebook.com/" target="_blank">
+            <a href="https://www.facebook.com/" target="_blank" itemprop="url">
                 <i class="fa-brands fa-facebook white-text"></i>
             </a>
         </li>
         <li>
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/" target="_blank" itemprop="url">
                 <i class="fa-brands fa-square-instagram white-text"></i>
             </a>
         </li>
         <li>
-            <a href="https://www.linkedin.com/" target="_blank">
+            <a href="https://www.linkedin.com/" target="_blank" itemprop="url">
                 <i class="fa-brands fa-linkedin white-text"></i>
             </a>
         </li>
     </ul>
 </footer>
+
 
 </body>
 </html>

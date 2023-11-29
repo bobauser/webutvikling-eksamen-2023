@@ -1,0 +1,89 @@
+
+.header-element-selected::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 3px solid transparent; /* Starter som gjennomsiktig */
+    transition: border-color 0.5s ease;
+    text-underline-offset: 3px;
+}
+
+.yellow-bg-hover, .yellow-box, .yellow-box a, .yellow-box p,.black-text-hover p, .black-text-hover a, .article-card, .article-card p, .white-bg, .adress-hover, .adress-hover i, .white-input, .original-arrow-rectangel {
+    transition: 0.3s;
+}
+
+.yellow-bg-hover:hover, .white-bg:hover {
+    background-color: var(--dark-gray);
+    box-shadow: 0 0 20px var(--gold-yellow);
+}
+
+.black-text-hover:hover {
+    color: var(--gold-yellow);
+    box-shadow: 0 0 20px var(--gold-yellow);
+}
+
+.yellow-box:hover {
+    color: var(--gold-yellow);
+    box-shadow: 0 0 20px var(--gold-yellow);
+    background-color: var(--dark-gray);
+}
+
+.yellow-box:hover > * {
+    transition: 0.3s;
+    color: var(--gold-yellow);
+}
+
+.original-arrow-rectangel:hover {
+    background-color: var(--black);
+    border-radius: 20px;
+}
+
+.article-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.article-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.article-card:hover p{
+    padding: 2rem 2rem;
+}
+
+.adress-hover:hover {
+    font-weight: 600;
+    transition: 0.5s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.adress-hover:hover i{
+    color: var(--gold-yellow);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.white-input:hover {
+    /*box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);*/
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 0 20px white;
+    outline: 1px solid var(--lighter-gray);
+    transition: 0.5s;
+}
+
+
+@keyframes header-effect-fade-in {
+    0% {
+        font-weight: normal;
+        text-decoration: 3px underline #e6bd43;
+    }
+    100% {
+        font-weight: bold;
+        text-decoration: 3px underline #e6bd43;
+    }
+}

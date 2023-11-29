@@ -1,0 +1,160 @@
+body {
+    max-width: 1600px;
+}
+
+#compeling-headline-section {
+    position: relative;
+    /*background-color: lightgray;*/
+    overflow: hidden;
+
+}
+
+#compeling-headline-section section {
+    gap: 20px;
+    margin: 3rem 0;
+}
+
+#compeling-headline-section h1 {
+    margin: 0;
+}
+
+#background-video {
+    top: -10%;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    right: 0;
+    z-index: -1;
+}
+
+.video-replacement::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.568);
+    z-index: 1;
+}
+
+.video-replacement >* {
+    position: relative;
+    z-index: 2;
+}
+
+
+.opacity-background::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.568);
+    z-index: 1;
+}
+
+.opacity-background >* {
+    position: relative;
+    z-index: 2;
+}
+
+#engaging-subheading-section {
+    border-bottom: 2px solid lightgray;
+}
+
+.aside-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 3rem 3rem 3rem 0;
+    z-index: 1;
+}
+
+
+.figure-img-fill-width {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.figure-img-fill-width img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+
+
+.align-vertically {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+
+#about-our-company {
+    min-height: 25rem;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio-section {
+    min-height: 25rem;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio-section header {
+    display: flex;
+    top: 0;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    right: 0;
+    z-index: -1;
+    margin: 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.568);
+    justify-content: center;
+}
+
+.background-image-figure {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    z-index: -1;
+    margin: 0;
+}
+
+#scroll-up-arrow {
+    position: fixed; /* Use fixed to keep it in the same place on the screen */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    display: block; /* Start with the button not displayed */
+    /* Add any other styles such as z-index, size, colors, etc. */
+    z-index: 1000; /* Make sure it's above other content */
+    cursor: pointer;
+    /* More styling for the button here */
+}
