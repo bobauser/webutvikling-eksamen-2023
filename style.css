@@ -1,3 +1,164 @@
+body {
+    max-width: 1600px;
+}
+
+#compeling-headline-section {
+    position: relative;
+    /*background-color: lightgray;*/
+    overflow: hidden;
+
+}
+
+#compeling-headline-section section {
+    gap: 20px;
+    margin: 3rem 0;
+}
+
+#compeling-headline-section h1 {
+    margin: 0;
+}
+
+#background-video {
+    top: -10%;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    right: 0;
+    z-index: -1;
+}
+
+.video-replacement::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.568);
+    z-index: 1;
+}
+
+.video-replacement >* {
+    position: relative;
+    z-index: 2;
+}
+
+
+.opacity-background::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.568);
+    z-index: 1;
+}
+
+.opacity-background >* {
+    position: relative;
+    z-index: 2;
+}
+
+#engaging-subheading-section {
+    border-bottom: 2px solid lightgray;
+}
+
+.aside-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 3rem 3rem 3rem 0;
+    z-index: 1;
+}
+
+
+.figure-img-fill-width {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.figure-img-fill-width img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+
+
+.align-vertically {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+
+#about-our-company {
+    min-height: 25rem;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio-section {
+    min-height: 25rem;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio-section header {
+    display: flex;
+    top: 0;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    right: 0;
+    z-index: -1;
+    margin: 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.568);
+    justify-content: center;
+}
+
+.background-image-figure {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+    z-index: -1;
+    margin: 0;
+}
+
+#scroll-up-arrow {
+    position: fixed; /* Use fixed to keep it in the same place on the screen */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+    display: block; /* Start with the button not displayed */
+    /* Add any other styles such as z-index, size, colors, etc. */
+    z-index: 1000; /* Make sure it's above other content */
+    cursor: pointer;
+    /* More styling for the button here */
+}
+
 :root {
     --gold-yellow: #e6bd43;
     --dark-gray: #252525;
@@ -173,6 +334,7 @@ body {
 .content-row-compress-width {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap: 3rem;
 }
 
@@ -229,7 +391,7 @@ body {
 }
 
 .laptop-background {
-    background-image: url("ressurser/jegfantbildet;).png");
+    background-image: url("../ressurser/jegfantbildet;).png");
     background-size: cover;
     padding: 0 0 1rem 0;
 }
@@ -456,95 +618,6 @@ height: auto;
 }
 
 
-.header-element-selected::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-bottom: 3px solid transparent; /* Starter som gjennomsiktig */
-    transition: border-color 0.5s ease;
-    text-underline-offset: 3px;
-}
-
-.yellow-bg-hover, .yellow-box, .yellow-box a, .yellow-box p,.black-text-hover p, .black-text-hover a, .article-card, .article-card p, .white-bg, .adress-hover, .adress-hover i, .white-input, .original-arrow-rectangel {
-    transition: 0.3s;
-}
-
-.yellow-bg-hover:hover, .white-bg:hover {
-    background-color: var(--dark-gray);
-    box-shadow: 0 0 20px var(--gold-yellow);
-}
-
-.black-text-hover:hover {
-    color: var(--gold-yellow);
-    box-shadow: 0 0 20px var(--gold-yellow);
-}
-
-.yellow-box:hover {
-    color: var(--gold-yellow);
-    box-shadow: 0 0 20px var(--gold-yellow);
-    background-color: var(--dark-gray);
-}
-
-.yellow-box:hover > * {
-    transition: 0.3s;
-    color: var(--gold-yellow);
-}
-
-.original-arrow-rectangel:hover {
-    background-color: var(--black);
-    border-radius: 20px;
-}
-
-.article-card {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.article-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-}
-.article-card:hover p{
-    padding: 2rem 2rem;
-}
-
-.adress-hover:hover {
-    font-weight: 600;
-    transition: 0.5s;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-.adress-hover:hover i{
-    color: var(--gold-yellow);
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.white-input:hover {
-    /*box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);*/
-    outline: none;
-    border-radius: 15px;
-    box-shadow: 0 0 20px white;
-    outline: 1px solid var(--lighter-gray);
-    transition: 0.5s;
-}
-
-
-@keyframes header-effect-fade-in {
-    0% {
-        font-weight: normal;
-        text-decoration: 3px underline #e6bd43;
-    }
-    100% {
-        font-weight: bold;
-        text-decoration: 3px underline #e6bd43;
-    }
-}
-
 
 header {
     display: flex;
@@ -593,6 +666,97 @@ footer {
     gap: 1rem;
     align-items: center;
 }
+@media screen and (min-width: 755px) {
+
+    .header-element-selected::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-bottom: 3px solid transparent; /* Starter som gjennomsiktig */
+        transition: border-color 0.5s ease;
+        text-underline-offset: 3px;
+    }
+
+    .yellow-bg-hover, .yellow-box, .yellow-box a, .yellow-box p,.black-text-hover p, .black-text-hover a, .article-card, .article-card p, .white-bg, .adress-hover, .adress-hover i, .white-input, .original-arrow-rectangel {
+        transition: 0.3s;
+    }
+
+    .yellow-bg-hover:hover, .white-bg:hover {
+        background-color: var(--dark-gray);
+        box-shadow: 0 0 20px var(--gold-yellow);
+    }
+
+    .black-text-hover:hover {
+        color: var(--gold-yellow);
+        box-shadow: 0 0 20px var(--gold-yellow);
+    }
+
+    .yellow-box:hover {
+        color: var(--gold-yellow);
+        box-shadow: 0 0 20px var(--gold-yellow);
+        background-color: var(--dark-gray);
+    }
+
+    .yellow-box:hover > * {
+        transition: 0.3s;
+        color: var(--gold-yellow);
+    }
+
+    .original-arrow-rectangel:hover {
+        background-color: var(--black);
+        border-radius: 20px;
+    }
+
+    .article-card {
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .article-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+    }
+    .article-card:hover p{
+        padding: 2rem 2rem;
+    }
+
+    .adress-hover:hover {
+        font-weight: 600;
+        transition: 0.5s;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+
+    .adress-hover:hover i{
+        color: var(--gold-yellow);
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    .white-input:hover {
+        /*box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);*/
+        outline: none;
+        border-radius: 15px;
+        box-shadow: 0 0 20px white;
+        outline: 1px solid var(--lighter-gray);
+        transition: 0.5s;
+    }
+
+
+    @keyframes header-effect-fade-in {
+        0% {
+            font-weight: normal;
+            text-decoration: 3px underline #e6bd43;
+        }
+        100% {
+            font-weight: bold;
+            text-decoration: 3px underline #e6bd43;
+        }
+    }
+}
 
 @media screen and (max-width: 755px) {
 
@@ -633,7 +797,7 @@ footer {
         height: auto;
 
 
-        background-image: url("ressurser/jegfantbildet;).png");
+        background-image: url("../ressurser/jegfantbildet;).png");
         background-size: cover;
         padding: 0 0 1rem 0;
     }
@@ -665,6 +829,7 @@ footer {
         align-content: center;
         padding: 3rem 20px 3rem 20px;
         align-items: center;
+        text-align: center;
     }
 
     .icon-links li a {
@@ -677,170 +842,7 @@ footer {
         gap: 2rem;
         padding: 0;
     }
-}
 
-body {
-    max-width: 1600px;
-}
-
-#compeling-headline-section {
-    position: relative;
-    /*background-color: lightgray;*/
-    overflow: hidden;
-
-}
-
-#compeling-headline-section section {
-    gap: 20px;
-    margin: 3rem 0;
-}
-
-#compeling-headline-section h1 {
-    margin: 0;
-}
-
-#background-video {
-    top: -10%;
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    background-size: cover;
-    right: 0;
-    z-index: -1;
-}
-
-.video-replacement::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.568);
-    z-index: 1;
-}
-
-.video-replacement >* {
-    position: relative;
-    z-index: 2;
-}
-
-
-.opacity-background::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.568);
-    z-index: 1;
-}
-
-.opacity-background >* {
-    position: relative;
-    z-index: 2;
-}
-
-#engaging-subheading-section {
-    border-bottom: 2px solid lightgray;
-}
-
-.aside-card {
-    position: relative;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    margin: 3rem 3rem 3rem 0;
-    z-index: 1;
-}
-
-
-.figure-img-fill-width {
-    position: relative;
-    overflow: hidden;
-    display: block;
-}
-
-.figure-img-fill-width img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-}
-
-
-
-.align-vertically {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 3rem 0;
-}
-
-
-#about-our-company {
-    min-height: 25rem;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-#portfolio-section {
-    min-height: 25rem;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-#portfolio-section header {
-    display: flex;
-    top: 0;
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    right: 0;
-    z-index: -1;
-    margin: 0;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.568);
-    justify-content: center;
-}
-
-.background-image-figure {
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    background-size: cover;
-    z-index: -1;
-    margin: 0;
-}
-
-#scroll-up-arrow {
-    position: fixed; /* Use fixed to keep it in the same place on the screen */
-    bottom: 20px; /* 20px from the bottom */
-    right: 20px; /* 20px from the right */
-    display: block; /* Start with the button not displayed */
-    /* Add any other styles such as z-index, size, colors, etc. */
-    z-index: 1000; /* Make sure it's above other content */
-    cursor: pointer;
-    /* More styling for the button here */
-}
-
-@media screen and (max-width: 755px) {
     /*Grid Formater*/
     .divide-left-right {
         display: grid;
@@ -892,6 +894,37 @@ body {
         margin: 0;
     }
 
+    .align-at-middle-60 {
+        display: flex;
+    }
+
+    .align-at-middle-60 >* {
+        width: 60%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .align-at-middle-80 { /*Ødela denne for en annen nå kanskje?*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    .align-at-middle-80 >* {
+        width: 80%;
+        width: 60%;
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        width: 70%;
+        margin: 0 auto;
+    }
+
     .align-at-middle-60 > *,
     .align-at-middle-80 > * {
         width: 100%; /* Barn tar full bredde for å tillate sentrering */
@@ -912,7 +945,13 @@ body {
     }
 
 
+    .bg-box {
+        width: 100%;
+    }
 
+    .bg-box-small {
+        width: auto;
+    }
 
 
     .flex-list {
@@ -950,5 +989,4 @@ body {
         flex-direction: column;
         gap: 4rem;
     }
-
 }
