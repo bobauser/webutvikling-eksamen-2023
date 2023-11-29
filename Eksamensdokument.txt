@@ -6,3 +6,12 @@ Jeg designet CSS-en min til å bli en Tailwind lignende oppsett (skrev mybootstr
 
 Inntil nå (kl 13 den 29.) så har jeg ikke implementert en Mobile-First approach, dette burde jeg ha gjort i fra starten, og la merke til etterhvert at ble vanskelig å få til, etter å ha designet nettsiden for pc
 
+Bakgrunnsbildet er annerledes i Index og porfolio siden, her prøvde jeg to ulike løsninger, men bakrunnsbildet på index er mer responsivt
+
+
+Dumpapp bilde (placeholder1): https://www.klikk.no/friluftsliv/de-10-vanligste-fuglene-fuglebrettet-6981359
+
+Fuglebilde (placeholder2): https://www.bath.ac.uk/announcements/tropical-birds-are-30-more-colourful-than-those-living-near-the-poles-says-research/
+
+mobilbilde (jegfantbildet.png): 
+https://www.socialbeesness.com/consulting

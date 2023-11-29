@@ -69,6 +69,7 @@
         align-content: center;
         padding: 3rem 20px 3rem 20px;
         align-items: center;
+        text-align: center;
     }
 
     .icon-links li a {

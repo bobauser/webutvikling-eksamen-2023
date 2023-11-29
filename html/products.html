@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+    <meta name="author" content="Edvin Ulvestad">
+    <meta name="description" content="Eksamen Prosjektet til Edvin Ulvestad, 29. Nov 2023">
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="Eksamens Prosjekt 2023">
+    <meta property="og:url" content="https://schema.org/AggregateRating">
+    <meta property="og:description" content="Eksamen Prosjektet Products Page">
+    <meta property="og:image" content="../ressurser/logo1.png">
 
     <link rel="icon" href="../ressurser/favikon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../ressurser/favikon.png" type="image/x-icon">
@@ -10,8 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---Styling--->
     <link rel="stylesheet" type="text/css" href="../Styling/pages.css">
     <link rel="stylesheet" type="text/css" href="../Styling/mybootstrap.css">
     <link rel="stylesheet" type="text/css" href="../Styling/components.css">
@@ -24,36 +32,36 @@
 </head>
 <body id="products-grid">
 
-<header>
-    <a href="../html/index.html">
+<header role="banner">
+    <a href="../html/index.html" tabindex="1">
         <img class="logo-img" src="../ressurser/logo1.png" alt="Bilde av logo i header">
     </a>
 
     <nav aria-label="Breadcrumb">
         <ul class="header-ul-flex-list" itemscope itemtype="https://schema.org/BreadcrumbList">
             <li class="header-element-selected" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="../html/index.html" itemprop="name">Home</a>
-                <meta itemprop="position" content="1" />
+                <a href="../html/index.html" itemprop="name" tabindex="2">Home</a>
+                <meta itemprop="position" content="1">
             </li>
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="../html/products.html" itemprop="name">Portfolio</a>
-                <meta itemprop="position" content="1" />
+                <a href="../html/products.html" itemprop="name" tabindex="3">Portfolio</a>
+                <meta itemprop="position" content="2">
             </li>
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="../html/about.html" itemprop="name">About</a>
-                <meta itemprop="position" content="1" />
+                <a href="../html/about.html" itemprop="name" tabindex="4">About</a>
+                <meta itemprop="position" content="3">
             </li>
             <li class="yellow-box" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="../html/about.html#contact-us" itemprop="name">Contact</a>
-                <meta itemprop="position" content="1" />
+                <a href="../html/about.html#contact-us" itemprop="name" tabindex="5">Contact</a>
+                <meta itemprop="position" content="4">
             </li>
         </ul>
     </nav>
 </header>
 
-<aside>
+<aside role="complementary">
     <div id="scroll-up-arrow">
-        <button class="bg-box dark-gray-bg original-arrow-rectangel" onclick="scrollToTop()">
+        <button class="bg-box dark-gray-bg original-arrow-rectangel" tabindex="20" onclick="scrollToTop()">
           <span class="white-text">
               <i class="fa-solid fa-arrow-up white-text font-medium-small"></i>
               <!---   <i class="fa-solid fa-chevron-up white-text font-medium"></i>    -->
@@ -71,117 +79,123 @@
 </aside>
 
 
-<main>
+<main itemscope itemtype="https://schema.org/CollectionPage" role="main">
 
-    <section id="portfolio-section">
-        <figure class="background-image-figure">
-            <img src="../ressurser/jegfantbildet;).png" alt="About Image">
+    <section id="portfolio-section" role="region" aria-labelledby="portfolio-heading">
+        <figure class="background-image-figure" role="img" aria-label="About bilde">
+            <img src="../ressurser/jegfantbildet;).png" alt="About bilde">
         </figure>
 
         <header>
-            <h1 class="font-big">Portfolio</h1>
+            <h1 id="portfolio-heading" class="font-big">Portfolio</h1>
         </header>
     </section>
 
-    <section class="explore-jobs margin-square-2">
+    <section class="explore-jobs margin-square-2" role="region">
         <h2 class="font-medium border-bottom-thick-yellow">Explore previous jobs</h2>
         <ul class="flex-list">
-            <li><a href="#branding-section" class="bg-box-small white-bg border-black-2 black-text-hover">Branding</a></li>
-            <li><a href="#design-section" class="bg-box-small white-bg border-black-2 black-text-hover">Design</a></li>
-            <li><a href="#development-section" class="bg-box-small white-bg border-black-2 black-text-hover">Development</a></li>
+            <li><a href="#branding-section" tabindex="2" class="bg-box-small white-bg border-black-2 black-text-hover">Branding</a></li>
+            <li><a href="#design-section" tabindex="3" class="bg-box-small white-bg border-black-2 black-text-hover">Design</a></li>
+            <li><a href="#development-section" tabindex="4" class="bg-box-small white-bg border-black-2 black-text-hover">Development</a></li>
         </ul>
     </section>
 
-    <section id="branding-section" class="margin-square-2">
+    <section id="branding-section" class="margin-square-2" itemscope itemtype="https://schema.org/CreativeWork">
         <h2 class="font-medium border-bottom-thick-yellow">Branding</h2>
-        <ul class="flex-list-articles">
-            <article class="article-card">
+        <div class="flex-list-articles">
+            <article class="article-card" itemprop="workExample" itemscope itemtype="https://schema.org/CreativeWork" tabindex="5">
                 <figure class="figure-square-grow">
-                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    <img src="../ressurser/placeholder1.jpg" alt=""> <!--Dette er et dekorativt bilde, og går igjen på hver artikkel-->
                 </figure>
                 <p class="font-normal text-bold">Et harum quidem</p>
             </article>
 
-            <article class="article-card">
+            <article class="article-card" itemprop="workExample" itemscope itemtype="https://schema.org/CreativeWork" tabindex="6">
                 <figure class="figure-square-grow">
-                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    <img src="../ressurser/placeholder1.jpg" alt="">
                 </figure>
                 <p class="font-normal text-bold">Et harum quidem</p>
             </article>
 
-            <article class="article-card">
+            <article class="article-card" itemprop="workExample" itemscope itemtype="https://schema.org/CreativeWork" tabindex="7">
                 <figure class="figure-square-grow">
-                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    <img src="../ressurser/placeholder1.jpg" alt="">
                 </figure>
                 <p class="font-normal text-bold">Et harum quidem</p>
             </article>
 
-            <article class="article-card">
+            <article class="article-card" itemprop="workExample" itemscope itemtype="https://schema.org/CreativeWork" tabindex="8">
                 <figure class="figure-square-grow">
-                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    <img src="../ressurser/placeholder1.jpg" alt="">
                 </figure>
                 <p class="font-normal text-bold">Et harum quidem</p>
             </article>
-        </ul>
+        </div>
     </section>
 
     <section id="design-section" class="margin-square-2">
         <h2 class="font-medium border-bottom-thick-yellow">Design</h2>
-        <ul class="flex-list-articles">
-            <article class="article-card">
+        <div class="flex-list-articles">
+            <article class="article-card" itemprop="workExample" itemscope itemtype="https://schema.org/CreativeWork" tabindex="9">
                 <figure class="figure-square-grow">
-                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    <img src="../ressurser/placeholder1.jpg" alt="">
                 </figure>
                 <p class="font-normal text-bold">Et harum quidem</p>
             </article>
-            <article class="article-card">
+            <article class="article-card" itemprop="workExample" itemscope itemtype="https://schema.org/CreativeWork" tabindex="10">
                 <figure class="figure-square-grow">
-                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    <img src="../ressurser/placeholder1.jpg" alt="">
+                </figure>
+                <p class="font-normal text-bold">Et harum quidem</p>
+            </article>
+            <article class="article-card" itemprop="workExample" itemscope itemtype="https://schema.org/CreativeWork" tabindex="11">
+                <figure class="figure-square-grow">
+                    <img src="../ressurser/placeholder1.jpg" alt="">
                 </figure>
                 <p class="font-normal text-bold">Et harum quidem</p>
             </article>
 
-        </ul>
+        </div>
     </section>
 
     <section id="development-section" class="margin-square-2">
         <h2 class="font-medium border-bottom-thick-yellow">Development</h2>
-        <ul class="flex-list-articles">
-            <article class="article-card">
+        <div class="flex-list-articles">
+            <article class="article-card" itemprop="workExample" itemscope itemtype="https://schema.org/CreativeWork" tabindex="12">
                 <figure class="figure-square-grow">
-                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    <img src="../ressurser/placeholder1.jpg" alt="">
                 </figure>
                 <p class="font-normal text-bold">Et harum quidem</p>
             </article>
-            <article class="article-card">
+            <article class="article-card" itemprop="workExample" itemscope itemtype="https://schema.org/CreativeWork" tabindex="13">
                 <figure class="figure-square-grow">
-                    <img src="../ressurser/placeholder1.jpg" alt="A picture of something">
+                    <img src="../ressurser/placeholder1.jpg" alt="">
                 </figure>
                 <p class="font-normal text-bold">Et harum quidem</p>
             </article>
 
-        </ul>
+        </div>
     </section>
 </main>
 
-<footer class="dark-gray-bg" itemscope itemtype="http://schema.org/WPFooter">
-    <a href="../html/index.html" itemprop="url">
+<footer class="dark-gray-bg" itemscope itemtype="http://schema.org/WPFooter" role="contentinfo">
+    <a href="../html/index.html" tabindex="14" itemprop="url">
         <img class="logo-img" src="../ressurser/logo1.png" alt="Bilde av logo i footer" itemprop="logo">
     </a>
     <p itemprop="copyright">Companyrights Companyname 2023</p>
     <ul class="footer-ul-flex-list icon-links" itemprop="sameAs">
         <li>
-            <a href="https://www.facebook.com/" target="_blank" itemprop="url">
+            <a href="https://www.facebook.com/" tabindex="15" target="_blank" itemprop="url">
                 <i class="fa-brands fa-facebook white-text"></i>
             </a>
         </li>
         <li>
-            <a href="https://www.instagram.com/" target="_blank" itemprop="url">
+            <a href="https://www.instagram.com/" tabindex="16" target="_blank" itemprop="url">
                 <i class="fa-brands fa-square-instagram white-text"></i>
             </a>
         </li>
         <li>
-            <a href="https://www.linkedin.com/" target="_blank" itemprop="url">
+            <a href="https://www.linkedin.com/" tabindex="17" target="_blank" itemprop="url">
                 <i class="fa-brands fa-linkedin white-text"></i>
             </a>
         </li>

@@ -173,6 +173,7 @@ body {
 .content-row-compress-width {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap: 3rem;
 }
 
