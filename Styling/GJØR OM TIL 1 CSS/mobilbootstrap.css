@@ -1,0 +1,23 @@
+
+:root {
+    --gold-yellow: #e6bd43;
+    --dark-gray: #252525;
+    --black: #000;
+    --white: #fff;
+    --light-gray: #D3D3D3FF;
+    --lighter-gray: #ececec;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+/* ... rest of the CSS ... */
+
+@media screen and (max-width: 755px) {
+    /* Mobile styles */
+}
