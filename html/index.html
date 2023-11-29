@@ -5,11 +5,11 @@
     <title>Company Name - Home</title>
     <meta name="author" content="Edvin Ulvestad">
     <meta name="description" content="Eksamen Prosjektet til Edvin Ulvestad, 29. Nov 2023">
-
+    <meta property="og:type" content="website">
     <meta property="og:title" content="Eksamens Prosjekt 2023">
     <meta property="og:url" content="https://schema.org/AggregateRating">
     <meta property="og:description" content="Eksamen Prosjektet til Edvin Ulvestad, 29. Nov 2023">
-    <meta property="og:image" content="D:\StudieGreier\Webutvikling\webutvikling-eksamen-2023\ressurser\logo1.png">
+    <meta property="og:image" content="../ressurser/logo1.png">
 
     <link rel="icon" href="../ressurser/favikon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../ressurser/favikon.png" type="image/x-icon">
@@ -18,6 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---Styling--->
     <link rel="stylesheet" type="text/css" href="../Styling/pages.css">
     <link rel="stylesheet" type="text/css" href="../Styling/mybootstrap.css">
     <link rel="stylesheet" type="text/css" href="../Styling/components.css">
@@ -31,36 +33,36 @@
 </head>
 <body>
 
-<header>
-    <a href="../html/index.html">
+<header role="banner">
+    <a href="../html/index.html" tabindex="1">
         <img class="logo-img" src="../ressurser/logo1.png" alt="Bilde av logo i header">
     </a>
 
     <nav aria-label="Breadcrumb">
         <ul class="header-ul-flex-list" itemscope itemtype="https://schema.org/BreadcrumbList">
             <li class="header-element-selected" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="../html/index.html" itemprop="name">Home</a>
-                <meta itemprop="position" content="1" />
+                <a href="../html/index.html" itemprop="name" tabindex="2">Home</a>
+                <meta itemprop="position" content="1">
             </li>
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="../html/products.html" itemprop="name">Portfolio</a>
-                <meta itemprop="position" content="1" />
+                <a href="../html/products.html" itemprop="name" tabindex="3">Portfolio</a>
+                <meta itemprop="position" content="2">
             </li>
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="../html/about.html" itemprop="name">About</a>
-                <meta itemprop="position" content="1" />
+                <a href="../html/about.html" itemprop="name" tabindex="4">About</a>
+                <meta itemprop="position" content="3">
             </li>
             <li class="yellow-box" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="../html/about.html#contact-us" itemprop="name">Contact</a>
-                <meta itemprop="position" content="1" />
+                <a href="../html/about.html#contact-us" itemprop="name" tabindex="5">Contact</a>
+                <meta itemprop="position" content="4">
             </li>
         </ul>
     </nav>
 </header>
 
-<aside>
+<aside role="complementary">
     <div id="scroll-up-arrow">
-        <button class="bg-box dark-gray-bg original-arrow-rectangel" onclick="scrollToTop()">
+        <button class="bg-box dark-gray-bg original-arrow-rectangel" tabindex="20" onclick="scrollToTop()">
           <span class="white-text">
               <i class="fa-solid fa-arrow-up white-text font-medium-small"></i>
               <!---   <i class="fa-solid fa-chevron-up white-text font-medium"></i>    -->
@@ -77,15 +79,15 @@
     </div>
 </aside>
 
-<main>
+<main role="main">
     <section id="compeling-headline-section" class="padding-vertical-7 align-at-middle-60 video-replacement" itemscope itemtype="https://schema.org/WebPageElement">
         <video autoplay muted loop id="background-video" itemprop="video">
             <source src="../ressurser/mountains.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <h1 class="font-big" itemprop="headline">Compelling headline</h1>
+        <h1 class="font-big" itemprop="headline" tabindex="6">Compelling headline</h1>
         <p itemprop="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada tempor enim ut viverra. Morbi mattis libero id dui rhoncus feugiat. Quisque feugiat tristique urna, vel interdum nisl. Integer orci urna, congue laoreet vehicula vitae, accumsan nec eros. Vivamus eleifend erat mauris, ac interdum velit pretium vel. Cras aliquam nec nibh nec porttitor.</p>
-        <a href="#services-section" class="yellow-bg-hover bg-box text-bold black-text-hover" itemprop="url">Read more about our services</a>
+        <a href="#services-section" class="yellow-bg-hover bg-box text-bold black-text-hover" itemprop="url" tabindex="7">Read more about our services</a>
     </section>
 
     <section id="engaging-subheading-section" class="align-at-middle-60 padding-vertical-3" itemscope itemtype="https://schema.org/WebPageElement">
@@ -100,7 +102,7 @@
         <div class="right text-left" itemprop="description">
             <h3 class="font-normal">About Our Company</h3>
             <p class="margin-vertical-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada tempor enim ut viverra. Morbi mattis libero id dui rhoncus feugiat. Quisque feugiat tristique urna, vel interdum nisl. Integer orci urna, congue laoreet vehicula vitae, accumsan nec eros. Vivamus eleifend erat mauris, ac interdum velit pretium vel.</p>
-            <a href="../html/about.html" class="bg-box yellow-bg-hover border-black-4 text-bold black-text-hover " itemprop="url">Read more about us</a>
+            <a href="../html/about.html" tabindex="8" class="bg-box yellow-bg-hover border-black-4 text-bold black-text-hover " itemprop="url">Read more about us</a>
         </div>
     </article>
 
@@ -141,29 +143,29 @@
     <section id="newsletter-section" class="align-at-middle-60 lighter-gray-bg" itemscope itemtype="https://schema.org/WPAdBlock">
         <h2 class="font-medium">Sign up for our newsletter</h2>
         <form itemprop="potentialAction" itemscope itemtype="https://schema.org/SubscribeAction">
-            <input type="email" class="bg-box white-input" placeholder="Nora@epost.no" itemprop="recipient"><button type="submit" class="bg-box yellow-bg-hover black-text-hover text-bold" itemprop="action">Sign me up</button>
+            <input type="email" tabindex="9" class="bg-box white-input" placeholder="Nora@epost.no" itemprop="recipient"><button tabindex="10" type="submit" class="bg-box yellow-bg-hover black-text-hover text-bold" itemprop="action">Sign me up</button>
         </form>
     </section>
 </main>
 
-<footer class="dark-gray-bg" itemscope itemtype="http://schema.org/WPFooter">
-    <a href="../html/index.html" itemprop="url">
+<footer class="dark-gray-bg" itemscope itemtype="http://schema.org/WPFooter" role="contentinfo">
+    <a href="../html/index.html" itemprop="url" tabindex="11">
         <img class="logo-img" src="../ressurser/logo1.png" alt="Bilde av logo i footer" itemprop="logo">
     </a>
     <p itemprop="copyright">Companyrights Companyname 2023</p>
     <ul class="footer-ul-flex-list icon-links" itemprop="sameAs">
         <li>
-            <a href="https://www.facebook.com/" target="_blank" itemprop="url">
+            <a href="https://www.facebook.com/" target="_blank" itemprop="url" tabindex="12">
                 <i class="fa-brands fa-facebook white-text"></i>
             </a>
         </li>
         <li>
-            <a href="https://www.instagram.com/" target="_blank" itemprop="url">
+            <a href="https://www.instagram.com/" target="_blank" itemprop="url" tabindex="13">
                 <i class="fa-brands fa-square-instagram white-text"></i>
             </a>
         </li>
         <li>
-            <a href="https://www.linkedin.com/" target="_blank" itemprop="url">
+            <a href="https://www.linkedin.com/" target="_blank" itemprop="url" tabindex="14">
                 <i class="fa-brands fa-linkedin white-text"></i>
             </a>
         </li>

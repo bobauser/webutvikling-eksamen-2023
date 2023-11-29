@@ -50,6 +50,37 @@
         margin: 0;
     }
 
+    .align-at-middle-60 {
+        display: flex;
+    }
+
+    .align-at-middle-60 >* {
+        width: 60%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .align-at-middle-80 { /*Ødela denne for en annen nå kanskje?*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    .align-at-middle-80 >* {
+        width: 80%;
+        width: 60%;
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        width: 70%;
+        margin: 0 auto;
+    }
+
     .align-at-middle-60 > *,
     .align-at-middle-80 > * {
         width: 100%; /* Barn tar full bredde for å tillate sentrering */
@@ -70,7 +101,13 @@
     }
 
 
+    .bg-box {
+        width: 100%;
+    }
 
+    .bg-box-small {
+        width: auto;
+    }
 
 
     .flex-list {
