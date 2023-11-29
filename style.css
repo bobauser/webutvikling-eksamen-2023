@@ -855,6 +855,15 @@ footer {
         justify-content: center;
     }
 
+    .text-left {
+        width: 80%;
+        text-align: left;
+    }
+
+    .text-left {
+        
+    }
+
     .icon-list {
         text-wrap: none;
         width: min-content;
