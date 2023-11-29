@@ -391,7 +391,7 @@ body {
 }
 
 .laptop-background {
-    background-image: url("../ressurser/jegfantbildet;).png");
+    background-image: url("ressurser/jegfantbildet;).png");
     background-size: cover;
     padding: 0 0 1rem 0;
 }
@@ -797,7 +797,7 @@ footer {
         height: auto;
 
 
-        background-image: url("../ressurser/jegfantbildet;).png");
+        background-image: url("ressurser/jegfantbildet;).png");
         background-size: cover;
         padding: 0 0 1rem 0;
     }
@@ -852,6 +852,12 @@ footer {
         grid-template-columns: 80%;
         align-items: center;
         text-align: center;
+        justify-content: center;
+    }
+
+    .icon-list {
+        text-wrap: none;
+        width: min-content;
     }
 
     .grid-40-60 {
@@ -892,6 +898,12 @@ footer {
 
     .right figure, .left figure {
         margin: 0;
+    }
+
+    .right, .left {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 
     .align-at-middle-60 {
